@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Mauricio Triana Sánchez | Product Design & AI Specialist</title>
+    <meta name="description"
+        content="Portafolio de Andrés Mauricio Triana Sánchez, experto en Diseño de Producto, AI Driven Solutions, Analytics y Gestión de Proyectos TI.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Andrés Mauricio Triana Sánchez - Portafolio">
+    <meta property="og:description"
+        content="Product Design & AI Specialist. Creando soluciones impulsadas por IA y Analítica.">
+    <meta property="og:image" content="./Profile.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-name">Andrés Triana</span>
+                <span class="logo-title" data-i18n="logo_title">/ Product & AI Specialist</span>
+            </a>
+
+            <div class="lang-switch active-es" id="langSwitch" role="button"
+                aria-label="Cambiar idioma / Change language">
+                <div class="lang-slider"></div>
+                <span class="lang-option lang-es">ES</span>
+                <span class="lang-option lang-en">EN</span>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">Sobre mí</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav_exp">Experiencia</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Proyectos</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Habilidades</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav_edu">Educación</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary-outline" data-i18n="nav_contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section fade-in">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title"><span data-i18n="hero_greeting">Hola, soy</span> <span
+                            class="text-highlight">Andrés Triana</span></h1>
+                    <h2 class="hero-subtitle" data-i18n="hero_role">Product Design & AI Specialist</h2>
+                    <p class="hero-description" data-i18n="hero_desc">
+                        Impulso el <strong>Diseño y Desarrollo de Productos</strong> digitales mediante <strong>AI
+                            Driven Solutions</strong> y Analítica Avanzada.
+                        Experto en gestión de proyectos TI (Scrum) y metodologías <em>AI Way of Work</em> para maximizar
+                        el valor del negocio.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">Contáctame</a>
+                        <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="profile-frame">
+                        <img src="./Profile.jpg" alt="Foto de perfil de Andrés Mauricio Triana Sánchez"
+                            class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section bg-gray">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about_title">Sobre mí</h2>
+                <div class="about-content">
+                    <p data-i18n="about_p1">
+                        Soy un profesional enfocado en la intersección entre el <strong>Diseño de Producto</strong>, la
+                        tecnología y los datos. Mi filosofía de trabajo, <strong>AI Way of Work</strong>, integra
+                        herramientas de Inteligencia Artificial en cada etapa del ciclo de vida del desarrollo para
+                        acelerar la innovación y optimizar resultados.
+                    </p>
+                    <p data-i18n="about_p2">
+                        Con sólida experiencia en <strong>Gestión de Proyectos de TI</strong> bajo marcos ágiles como
+                        <strong>Scrum</strong>, lidero la creación de soluciones analíticas y de Machine Learning que no
+                        solo resuelven problemas complejos, sino que definen la estrategia de producto. He transformado
+                        operaciones en industrias como SaaS, e-commerce y salud mediante implementaciones tecnológicas
+                        robustas y escalables.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="exp_title">Experiencia Profesional</h2>
+                <div class="timeline">
+
+                    <!-- Job 1 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" data-i18n="job1_title">Product Owner & AI Analyst</h3>
+                                <span class="company">Avanto (OrderBahn SaaS)</span>
+                                <span class="date" data-i18n="job1_date">2023 – Presente</span>
+                            </div>
+                            <ul class="job-details" data-i18n="job1_desc">
+                                <li>Liderazgo en el <strong>Diseño y Desarrollo de Producto</strong> para la plataforma
+                                    SaaS OrderBahn, aplicando metodologías Scrum.</li>
+                                <li>Implementación de <strong>AI Driven Solutions</strong> para modelos predictivos y
+                                    optimización de flujos de trabajo en el sector mobiliario.</li>
+                                <li>Estructuración del Departamento de Datos, definiendo gobernanza y estrategias de
+                                    Analytics para la toma de decisiones.</li>
+                                <li>Gestión del backlog y priorización de features basadas en valor de negocio y
+                                    análisis de datos.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Job 2 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" data-i18n="job2_title">Independent Consulting</h3>
+                                <span class="company">Daniels Home Center</span>
+                                <span class="date" data-i18n="job2_date">2023 – Presente</span>
+                            </div>
+                            <ul class="job-details" data-i18n="job2_desc">
+                                <li>Desarrollo y despliegue de tienda e-commerce basada en Magento.</li>
+                                <li>Integración de APIs REST para sincronización de inventario en tiempo real.</li>
+                                <li>Implementación de soluciones API personalizadas para optimizar operaciones.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Job 3 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" data-i18n="job3_title">Project Engineer</h3>
+                                <span class="company">HK Global Training (HKG Duty Free)</span>
+                                <span class="date" data-i18n="job3_date">2022 – 2024</span>
+                            </div>
+                            <ul class="job-details" data-i18n="job3_desc">
+                                <li>Gestión de proyectos TI, incluyendo integración ERP con AX 2012 R3.</li>
+                                <li>Liderazgo en desarrollo de plataforma e-commerce e integraciones API.</li>
+                                <li>Implementación de procesos de minería de datos para enriquecimiento de productos.
+                                </li>
+                                <li>Desarrollo de APIs REST para mejorar la interoperabilidad del sistema.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Job 4 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" data-i18n="job4_title">Solution Specialist</h3>
+                                <span class="company">Parameta SAS</span>
+                                <span class="date" data-i18n="job4_date">2022 – 2023</span>
+                            </div>
+                            <ul class="job-details" data-i18n="job4_desc">
+                                <li>Definición y configuración de requerimientos para sistemas de compras.</li>
+                                <li>Validación, transformación y preparación de Big Data para analítica.</li>
+                                <li>Diseño de flujos de trabajo de pruebas unitarias y QA.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Job 5 -->
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="job-title" data-i18n="job5_title">Information Management Analyst</h3>
+                                <span class="company">Comfenalco Valle EPS</span>
+                                <span class="date" data-i18n="job5_date">2021 – 2022</span>
+                            </div>
+                            <ul class="job-details" data-i18n="job5_desc">
+                                <li>Diseño de dashboards BI para entes de control y auditorías externas.</li>
+                                <li>Automatización de bases de datos corporativas usando Microsoft 365 y SQL.</li>
+                                <li>Liderazgo en proyectos de innovación y sistemas de evaluación de riesgos.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-gray">
+            <div class="container">
+                <h2 class="section-title" data-i18n="projects_title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="proj1_title">E-commerce & API Integration</h3>
+                            <p class="project-desc" data-i18n="proj1_desc">Desarrollo de una tienda Magento completa con
+                                sincronización de inventario en tiempo real mediante APIs REST personalizadas para
+                                Daniels Home Center.</p>
+                            <div class="project-tags">
+                                <span class="tag">Magento</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">E-commerce</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="proj2_title">SaaS BI Environment</h3>
+                            <p class="project-desc" data-i18n="proj2_desc">Diseño de un entorno de Business Intelligence
+                                para OrderBahn, incluyendo modelos predictivos y dashboards para seguimiento de KPIs de
+                                proveedores.</p>
+                            <div class="project-tags">
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Data Engineering</span>
+                                <span class="tag">SaaS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title" data-i18n="proj3_title">ERP Integration AX 2012</h3>
+                            <p class="project-desc" data-i18n="proj3_desc">Gestión de la integración de sistemas ERP y
+                                desarrollo de interoperabilidad mediante APIs para HK Global Training.</p>
+                            <div class="project-tags">
+                                <span class="tag">ERP</span>
+                                <span class="tag">AX 2012 R3</span>
+                                <span class="tag">Integration</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="skills_title">Habilidades & Tecnologías</h2>
+
+                <div class="skills-category">
+                    <h3 class="skills-subtitle">Product & Management</h3>
+                    <div class="skills-flex">
+                        <div class="skill-chip">Diseño de Producto</div>
+                        <div class="skill-chip">Scrum / Agile</div>
+                        <div class="skill-chip">IT Project Management</div>
+                        <div class="skill-chip">AI Way of Work</div>
+                        <div class="skill-chip">Estrategia SaaS</div>
+                        <div class="skill-chip">Jira</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="skills-subtitle">AI & Analytics</h3>
+                    <div class="skills-flex">
+                        <div class="skill-chip">AI Driven Solutions</div>
+                        <div class="skill-chip">Machine Learning</div>
+                        <div class="skill-chip">Predictive Modeling</div>
+                        <div class="skill-chip">Scikit-learn (Sk learn)</div>
+                        <div class="skill-chip">Data Engineering</div>
+                        <div class="skill-chip">Spark</div>
+                        <div class="skill-chip">Power BI / Tableau</div>
+                        <div class="skill-chip">Azure / AWS</div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="skills-subtitle">Tech Stack & Visualization</h3>
+                    <div class="skills-flex">
+                        <div class="skill-chip">Python</div>
+                        <div class="skill-chip">SQL</div>
+                        <div class="skill-chip">APIs REST</div>
+                        <div class="skill-chip">Chart.js</div>
+                        <div class="skill-chip">D3.js</div>
+                        <div class="skill-chip">Plotly</div>
+                        <div class="skill-chip">Web Dev (JS/HTML)</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="section bg-gray">
+            <div class="container">
+                <div class="grid-2-col">
+                    <div>
+                        <h2 class="section-title" data-i18n="edu_title">Educación</h2>
+                        <ul class="list-unstyled">
+                            <li class="edu-item">
+                                <h4 class="edu-degree">Master of Engineering (MEng), Data Science & Analytics</h4>
+                                <p class="edu-school">UNIR (2023 – 2025)</p>
+                            </li>
+                            <li class="edu-item">
+                                <h4 class="edu-degree">Digital Project Management, Engineering</h4>
+                                <p class="edu-school">MIU City University Miami (2024 – 2025)</p>
+                            </li>
+                            <li class="edu-item">
+                                <h4 class="edu-degree">B.Eng, Industrial Engineering</h4>
+                                <p class="edu-school">Universidad de Ibagué (2012 – 2018)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="section-title" data-i18n="cert_title">Certificaciones</h2>
+                        <ul class="cert-list">
+                            <li>Microsoft Certified: Azure AI Fundamentals</li>
+                            <li>Internal Auditor in Integrated HSEQ Systems</li>
+                            <li>Data Analysis Professional Skills – Coursera</li>
+                            <li>Leadership Continuing Education Certificate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-container">
+                <h2 class="section-title text-center" data-i18n="contact_title">Contacto</h2>
+                <p class="text-center contact-intro" data-i18n="contact_intro">¿Interesado en colaborar o tienes alguna
+                    pregunta? Envíame un mensaje.</p>
+
+                <form class="contact-form" action="mailto:andresm3000@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_msg">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="¿Cómo puedo ayudarte?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_send">Enviar Mensaje</button>
+                </form>
+
+                <div class="social-links text-center">
+                    <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" aria-label="LinkedIn">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:andresm3000@gmail.com" aria-label="Email">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="text-center location-text">📍 Cali, Valle del Cauca, Colombia</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Andrés Mauricio Triana Sánchez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Translations
+        const translations = {
+            es: {
+                logo_title: "/ Product & AI Specialist",
+                nav_about: "Sobre mí",
+                nav_exp: "Experiencia",
+                nav_projects: "Proyectos",
+                nav_skills: "Habilidades",
+                nav_edu: "Educación",
+                nav_contact: "Contacto",
+                hero_greeting: "Hola, soy",
+                hero_role: "Product Design & AI Specialist",
+                hero_desc: "Impulso el <strong>Diseño y Desarrollo de Productos</strong> digitales mediante <strong>AI Driven Solutions</strong> y Analítica Avanzada. Experto en gestión de proyectos TI (Scrum) y metodologías <em>AI Way of Work</em> para maximizar el valor del negocio.",
+                btn_contact: "Contáctame",
+                about_title: "Sobre mí",
+                about_p1: "Soy un profesional enfocado en la intersección entre el <strong>Diseño de Producto</strong>, la tecnología y los datos. Mi filosofía de trabajo, <strong>AI Way of Work</strong>, integra herramientas de Inteligencia Artificial en cada etapa del ciclo de vida del desarrollo para acelerar la innovación y optimizar resultados.",
+                about_p2: "Con sólida experiencia en <strong>Gestión de Proyectos de TI</strong> bajo marcos ágiles como <strong>Scrum</strong>, lidero la creación de soluciones analíticas y de Machine Learning que no solo resuelven problemas complejos, sino que definen la estrategia de producto. He transformado operaciones en industrias como SaaS, e-commerce y salud mediante implementaciones tecnológicas robustas y escalables.",
+                exp_title: "Experiencia Profesional",
+                job1_title: "Product Owner & AI Analyst",
+                job1_date: "2023 – Presente",
+                job1_desc: "<li>Liderazgo en el <strong>Diseño y Desarrollo de Producto</strong> para la plataforma SaaS OrderBahn, aplicando metodologías Scrum.</li><li>Implementación de <strong>AI Driven Solutions</strong> para modelos predictivos y optimización de flujos de trabajo en el sector mobiliario.</li><li>Estructuración del Departamento de Datos, definiendo gobernanza y estrategias de Analytics para la toma de decisiones.</li><li>Gestión del backlog y priorización de features basadas en valor de negocio y análisis de datos.</li>",
+                job2_title: "Independent Consulting",
+                job2_date: "2023 – Presente",
+                job2_desc: "<li>Desarrollo y despliegue de tienda e-commerce basada en Magento.</li><li>Integración de APIs REST para sincronización de inventario en tiempo real.</li><li>Implementación de soluciones API personalizadas para optimizar operaciones.</li>",
+                job3_title: "Project Engineer",
+                job3_date: "2022 – 2024",
+                job3_desc: "<li>Gestión de proyectos TI, incluyendo integración ERP con AX 2012 R3.</li><li>Liderazgo en desarrollo de plataforma e-commerce e integraciones API.</li><li>Implementación de procesos de minería de datos para enriquecimiento de productos.</li><li>Desarrollo de APIs REST para mejorar la interoperabilidad del sistema.</li>",
+                job4_title: "Solution Specialist",
+                job4_date: "2022 – 2023",
+                job4_desc: "<li>Definición y configuración de requerimientos para sistemas de compras.</li><li>Validación, transformación y preparación de Big Data para analítica.</li><li>Diseño de flujos de trabajo de pruebas unitarias y QA.</li>",
+                job5_title: "Information Management Analyst",
+                job5_date: "2021 – 2022",
+                job5_desc: "<li>Diseño de dashboards BI para entes de control y auditorías externas.</li><li>Automatización de bases de datos corporativas usando Microsoft 365 y SQL.</li><li>Liderazgo en proyectos de innovación y sistemas de evaluación de riesgos.</li>",
+                projects_title: "Proyectos Destacados",
+                proj1_title: "E-commerce & API Integration",
+                proj1_desc: "Desarrollo de una tienda Magento completa con sincronización de inventario en tiempo real mediante APIs REST personalizadas para Daniels Home Center.",
+                proj2_title: "SaaS BI Environment",
+                proj2_desc: "Diseño de un entorno de Business Intelligence para OrderBahn, incluyendo modelos predictivos y dashboards para seguimiento de KPIs de proveedores.",
+                proj3_title: "ERP Integration AX 2012",
+                proj3_desc: "Gestión de la integración de sistemas ERP y desarrollo de interoperabilidad mediante APIs para HK Global Training.",
+                skills_title: "Habilidades & Tecnologías",
+                edu_title: "Educación",
+                cert_title: "Certificaciones",
+                contact_title: "Contacto",
+                contact_intro: "¿Interesado en colaborar o tienes alguna pregunta? Envíame un mensaje.",
+                form_name: "Nombre",
+                form_email: "Email",
+                form_msg: "Mensaje",
+                btn_send: "Enviar Mensaje"
+            },
+            en: {
+                logo_title: "/ Product & AI Specialist",
+                nav_about: "About Me",
+                nav_exp: "Experience",
+                nav_projects: "Projects",
+                nav_skills: "Skills",
+                nav_edu: "Education",
+                nav_contact: "Contact",
+                hero_greeting: "Hi, I'm",
+                hero_role: "Product Design & AI Specialist",
+                hero_desc: "I drive <strong>Digital Product Design and Development</strong> through <strong>AI Driven Solutions</strong> and Advanced Analytics. Expert in IT Project Management (Scrum) and <em>AI Way of Work</em> methodologies to maximize business value.",
+                btn_contact: "Contact Me",
+                about_title: "About Me",
+                about_p1: "I am a professional focused on the intersection of <strong>Product Design</strong>, technology, and data. My <strong>AI Way of Work</strong> philosophy integrates Artificial Intelligence tools at every stage of the development lifecycle to accelerate innovation and optimize results.",
+                about_p2: "With solid experience in <strong>IT Project Management</strong> under agile frameworks like <strong>Scrum</strong>, I lead the creation of analytical and Machine Learning solutions that not only solve complex problems but also define product strategy. I have transformed operations in industries such as SaaS, e-commerce, and healthcare through robust and scalable technological implementations.",
+                exp_title: "Professional Experience",
+                job1_title: "Product Owner & AI Analyst",
+                job1_date: "2023 – Present",
+                job1_desc: "<li>Leadership in <strong>Product Design and Development</strong> for the OrderBahn SaaS platform, applying Scrum methodologies.</li><li>Implementation of <strong>AI Driven Solutions</strong> for predictive models and workflow optimization in the furniture sector.</li><li>Structuring of the Data Department, defining governance and Analytics strategies for decision making.</li><li>Backlog management and feature prioritization based on business value and data analysis.</li>",
+                job2_title: "Independent Consulting",
+                job2_date: "2023 – Present",
+                job2_desc: "<li>Development and deployment of a Magento-based e-commerce store.</li><li>Integration of REST APIs for real-time inventory synchronization.</li><li>Implementation of custom API solutions to streamline operations.</li>",
+                job3_title: "Project Engineer",
+                job3_date: "2022 – 2024",
+                job3_desc: "<li>IT project management, including ERP integration with AX 2012 R3.</li><li>Leadership in e-commerce platform development and API integrations.</li><li>Implementation of data mining processes for product enrichment.</li><li>Development of REST APIs to enhance system interoperability.</li>",
+                job4_title: "Solution Specialist",
+                job4_date: "2022 – 2023",
+                job4_desc: "<li>Definition and configuration of purchasing system requirements.</li><li>Big Data validation, transformation, and preparation for analytics.</li><li>Design of unit testing and QA workflows.</li>",
+                job5_title: "Information Management Analyst",
+                job5_date: "2021 – 2022",
+                job5_desc: "<li>Design of BI dashboards for control entities and external audits.</li><li>Management and automation of corporate databases using Microsoft 365 and SQL.</li><li>Leadership in innovation projects and risk evaluation systems.</li>",
+                projects_title: "Featured Projects",
+                proj1_title: "E-commerce & API Integration",
+                proj1_desc: "Development of a complete Magento store with real-time inventory synchronization via custom REST APIs for Daniels Home Center.",
+                proj2_title: "SaaS BI Environment",
+                proj2_desc: "Design of a Business Intelligence environment for OrderBahn, including predictive models and dashboards for supplier KPI tracking.",
+                proj3_title: "ERP Integration AX 2012",
+                proj3_desc: "Management of ERP system integration and interoperability development via APIs for HK Global Training.",
+                skills_title: "Skills & Technologies",
+                edu_title: "Education",
+                cert_title: "Certifications",
+                contact_title: "Contact",
+                contact_intro: "Interested in collaborating or have a question? Send me a message.",
+                form_name: "Name",
+                form_email: "Email",
+                form_msg: "Message",
+                btn_send: "Send Message"
+            }
+        };
+
+        // Language Switch Logic
+        const langSwitch = document.getElementById('langSwitch');
+        let currentLang = 'es';
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+
+            // Update Toggle UI
+            if (lang === 'en') {
+                langSwitch.classList.remove('active-es');
+                langSwitch.classList.add('active-en');
+            } else {
+                langSwitch.classList.remove('active-en');
+                langSwitch.classList.add('active-es');
+            }
+
+            // Update Text
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        // For placeholders or labels? Here we used labels for text, but placeholders might need update too.
+                        // Actually I didn't add data-i18n to placeholders in HTML, let's fix that or just update labels.
+                        // The labels have data-i18n.
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+        }
+
+        langSwitch.addEventListener('click', () => {
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            updateLanguage(newLang);
+        });
+
+        // Simple mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuBtn.addEventListener('click', () => {
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.add('fade-in');
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
