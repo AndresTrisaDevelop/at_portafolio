@@ -1,1035 +1,734 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrés Mauricio Triana Sánchez | Senior Business Analyst & Product Owner</title>
-    <meta name="description" content="Portafolio de Andrés Mauricio Triana Sánchez, Senior Business Analyst y Product Owner. Experto en soluciones SaaS, AI Way of Work y Data Driven Solutions.">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Andrés Mauricio Triana Sánchez - Portafolio">
-    <meta property="og:description" content="Senior Business Analyst & Product Owner. Experto en soluciones SaaS y AI Way of Work.">
+    <title>Andrés Mauricio Triana Sánchez | Senior Business Analyst & Data Strategist</title>
+    <meta name="description" content="Business Analyst, Data Visualization Specialist, Data Engineering & Predictive Analytics. Especialista en SaaS, AI, Python y Microsoft Fabric.">
+    <meta property="og:title" content="Andrés Mauricio Triana Sánchez">
+    <meta property="og:description" content="Business Strategy | Product & Data Strategy | BI & Predictive Modeling | AI-Driven SaaS Solutions">
     <meta property="og:image" content="./Profile.jpg">
     <meta property="og:type" content="website">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'navy': {
-                            950: '#030712',
-                            900: '#060d1f',
-                            850: '#0a1628',
-                            800: '#0f1f3d',
-                            700: '#162a52',
-                            600: '#1e3a6e',
-                        },
-                        'steel': {
-                            900: '#0d1b2e',
-                            800: '#162032',
-                            700: '#1f2d42',
-                            600: '#2a3d57',
-                            500: '#3d556e',
-                            400: '#5a7389',
-                            300: '#7e9ab5',
-                            200: '#a8bdd0',
-                            100: '#d1e0ec',
-                        },
-                        'electric': {
-                            500: '#3b82f6',
-                            400: '#60a5fa',
-                            300: '#93c5fd',
-                            200: '#bfdbfe',
-                            glow: '#1d4ed8',
-                        },
-                        'accent': '#38bdf8',
-                    },
-                    fontFamily: {
-                        'display': ['"Syne"', 'sans-serif'],
-                        'body': ['"DM Sans"', 'sans-serif'],
-                        'mono': ['"JetBrains Mono"', 'monospace'],
-                    },
-                    animation: {
-                        'fade-up': 'fadeUp 0.7s ease forwards',
-                        'glow-pulse': 'glowPulse 3s ease-in-out infinite',
-                        'slide-in': 'slideIn 0.5s ease forwards',
-                    },
-                    keyframes: {
-                        fadeUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        glowPulse: {
-                            '0%, 100%': { boxShadow: '0 0 20px rgba(59,130,246,0.3)' },
-                            '50%': { boxShadow: '0 0 40px rgba(59,130,246,0.6)' },
-                        },
-                        slideIn: {
-                            '0%': { opacity: '0', transform: 'translateX(-20px)' },
-                            '100%': { opacity: '1', transform: 'translateX(0)' },
-                        }
-                    }
-                }
-            }
+            theme: { extend: {
+                colors: {
+                    navy:  { 950:'#030712',900:'#060d1f',850:'#0a1628',800:'#0f1f3d',700:'#162a52',600:'#1e3a6e' },
+                    steel: { 900:'#0d1b2e',800:'#162032',700:'#1f2d42',600:'#2a3d57',500:'#3d556e',400:'#5a7389',300:'#7e9ab5',200:'#a8bdd0',100:'#d1e0ec' },
+                    electric:{ 500:'#3b82f6',400:'#60a5fa',300:'#93c5fd',200:'#bfdbfe',glow:'#1d4ed8' },
+                },
+                fontFamily: {
+                    display:['"Syne"','sans-serif'],
+                    body:   ['"DM Sans"','sans-serif'],
+                    mono:   ['"JetBrains Mono"','monospace'],
+                },
+            }}
         }
     </script>
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
-        * { font-family: 'DM Sans', sans-serif; }
-        h1, h2, h3, nav { font-family: 'Syne', sans-serif; }
-        
-        body {
-            background-color: #060d1f;
-            color: #d1e0ec;
-        }
-
-        /* Noise texture overlay */
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 0;
-            opacity: 0.6;
-        }
-
-        /* Grid background */
-        .grid-bg {
-            background-image: 
-                linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
-            background-size: 60px 60px;
-        }
-
-        /* Glowing orb */
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            pointer-events: none;
-        }
-
-        /* Blue gradient border */
-        .border-gradient {
-            border: 1px solid transparent;
-            background: linear-gradient(#0a1628, #0a1628) padding-box,
-                        linear-gradient(135deg, rgba(59,130,246,0.5), rgba(30,58,138,0.2)) border-box;
-        }
-
-        /* Timeline line */
-        .timeline-line {
-            position: absolute;
-            left: 16px;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background: linear-gradient(to bottom, rgba(59,130,246,0.8), rgba(59,130,246,0.1));
-        }
-
-        /* Nav glass effect */
-        .nav-glass {
-            background: rgba(6,13,31,0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(59,130,246,0.15);
-        }
-
-        /* Skill bar */
-        .skill-bar-fill {
-            background: linear-gradient(90deg, #1d4ed8, #3b82f6, #38bdf8);
-            box-shadow: 0 0 12px rgba(59,130,246,0.5);
-        }
-
-        /* Card hover glow */
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 0 30px rgba(59,130,246,0.15), 0 20px 40px rgba(0,0,0,0.4);
-            border-color: rgba(59,130,246,0.4) !important;
-        }
-
-        /* Animated underline */
-        .nav-link-animated {
-            position: relative;
-        }
-        .nav-link-animated::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 1px;
-            background: #3b82f6;
-            transition: width 0.3s ease;
-        }
-        .nav-link-animated:hover::after { width: 100%; }
-
-        /* Section fade-in */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Tag pill */
-        .tag-pill {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            letter-spacing: 0.05em;
-        }
-
-        /* Hero gradient text */
-        .gradient-text {
-            background: linear-gradient(135deg, #60a5fa, #38bdf8, #93c5fd);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* Current job badge */
-        .badge-current {
-            background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(56,189,248,0.15));
-            border: 1px solid rgba(59,130,246,0.4);
-            animation: glowPulse 3s ease-in-out infinite;
-        }
-
-        @keyframes glowPulse {
-            0%, 100% { box-shadow: 0 0 15px rgba(59,130,246,0.2); }
-            50% { box-shadow: 0 0 30px rgba(59,130,246,0.5); }
-        }
-
-        /* Mobile menu */
-        #mobile-menu {
-            transition: all 0.3s ease;
-        }
-
-        /* Lang toggle */
-        .lang-toggle {
-            background: rgba(30,58,138,0.3);
-            border: 1px solid rgba(59,130,246,0.3);
-        }
-        .lang-active {
-            background: #1d4ed8;
-            color: white;
-        }
-
-        /* Profile image */
-        .profile-ring {
-            background: linear-gradient(135deg, #3b82f6, #38bdf8, #1d4ed8);
-            padding: 3px;
-        }
-
-        /* Section label */
-        .section-label {
-            font-family: 'JetBrains Mono', monospace;
-            color: #60a5fa;
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-        }
-
-        /* Input styles */
-        input, textarea {
-            background: rgba(15,31,61,0.6) !important;
-            border: 1px solid rgba(59,130,246,0.2) !important;
-            color: #d1e0ec !important;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
-        }
-        input:focus, textarea:focus {
-            border-color: rgba(59,130,246,0.6) !important;
-            box-shadow: 0 0 0 3px rgba(59,130,246,0.1) !important;
-            outline: none !important;
-        }
-        input::placeholder, textarea::placeholder {
-            color: #5a7389 !important;
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #060d1f; }
-        ::-webkit-scrollbar-thumb { background: #1d4ed8; border-radius: 3px; }
+        *,body{font-family:'DM Sans',sans-serif}
+        h1,h2,h3,h4,nav{font-family:'Syne',sans-serif}
+        body{background-color:#060d1f;color:#a8bdd0}
+        .grid-bg{background-image:linear-gradient(rgba(59,130,246,.033) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.033) 1px,transparent 1px);background-size:64px 64px}
+        .orb{position:absolute;border-radius:50%;filter:blur(88px);pointer-events:none}
+        .nav-glass{background:rgba(6,13,31,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(59,130,246,.12)}
+        .g-border{border:1px solid transparent;background:linear-gradient(#0a1628,#0a1628) padding-box,linear-gradient(135deg,rgba(59,130,246,.42),rgba(30,58,138,.14)) border-box}
+        .card-h{transition:all .27s ease}
+        .card-h:hover{transform:translateY(-3px);box-shadow:0 0 26px rgba(59,130,246,.12),0 16px 32px rgba(0,0,0,.32);border-color:rgba(59,130,246,.36)!important}
+        .nav-ul{position:relative}
+        .nav-ul::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:#3b82f6;transition:width .27s ease}
+        .nav-ul:hover::after{width:100%}
+        .grad-text{background:linear-gradient(135deg,#60a5fa,#38bdf8,#93c5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .pulse-card{background:linear-gradient(135deg,rgba(59,130,246,.11),rgba(56,189,248,.07));border:1px solid rgba(59,130,246,.33);animation:cpulse 3s ease-in-out infinite}
+        @keyframes cpulse{0%,100%{box-shadow:0 0 13px rgba(59,130,246,.17)}50%{box-shadow:0 0 30px rgba(59,130,246,.46)}}
+        .bar-fill{background:linear-gradient(90deg,#1d4ed8,#3b82f6,#38bdf8);box-shadow:0 0 9px rgba(59,130,246,.42)}
+        .p-ring{background:linear-gradient(135deg,#3b82f6,#38bdf8,#1d4ed8);padding:3px;border-radius:9999px}
+        .s-label{font-family:'JetBrains Mono',monospace;color:#60a5fa;font-size:.71rem;letter-spacing:.2em;text-transform:uppercase}
+        .tag-mono{font-family:'JetBrains Mono',monospace;font-size:.67rem;letter-spacing:.04em}
+        .tl-line{position:absolute;left:15px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,rgba(59,130,246,.78),rgba(59,130,246,.04))}
+        .reveal{opacity:0;transform:translateY(24px);transition:opacity .62s ease,transform .62s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+        .lang-toggle{background:rgba(30,58,138,.24);border:1px solid rgba(59,130,246,.26)}
+        .lang-on{background:#1d4ed8;color:#fff}
+        .lang-off{color:#7e9ab5}
+        input,textarea{background:rgba(15,31,61,.54)!important;border:1px solid rgba(59,130,246,.17)!important;color:#d1e0ec!important;transition:border-color .27s,box-shadow .27s!important;border-radius:.75rem}
+        input:focus,textarea:focus{border-color:rgba(59,130,246,.53)!important;box-shadow:0 0 0 3px rgba(59,130,246,.09)!important;outline:none!important}
+        input::placeholder,textarea::placeholder{color:#3d556e!important}
+        ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#060d1f}::-webkit-scrollbar-thumb{background:#1d4ed8;border-radius:3px}
+        .cat-title{font-family:'JetBrains Mono',monospace;font-size:.69rem;letter-spacing:.17em;text-transform:uppercase;color:#60a5fa}
+        .skill-group{background:rgba(10,22,40,.58);border:1px solid rgba(59,130,246,.11);border-radius:1rem;padding:1.2rem}
+        .cert-item{display:flex;align-items:flex-start;gap:.7rem;padding:.85rem 1rem;background:rgba(10,22,40,.48);border:1px solid rgba(59,130,246,.11);border-radius:.82rem;transition:all .24s ease}
+        .cert-item:hover{border-color:rgba(59,130,246,.28);background:rgba(15,31,61,.48)}
     </style>
 </head>
 
 <body class="grid-bg relative">
 
-    <!-- ─── NAVBAR ─── -->
-    <header id="navbar" class="nav-glass fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-2">
-                <span class="font-display font-700 text-white text-lg tracking-tight">Andrés Triana</span>
-                <span class="text-electric-400 text-sm font-mono hidden sm:block">/ BI & Product</span>
+<!-- ── NAVBAR ── -->
+<header id="navbar" class="nav-glass fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2.5">
+            <span class="font-display font-800 text-white text-lg tracking-tight">Andrés Triana</span>
+            <span class="text-blue-400 font-mono text-xs hidden sm:block opacity-65">/ Data & BI Strategist</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-7">
+            <a href="#about"      class="nav-ul text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_about">Sobre mí</a>
+            <a href="#experience" class="nav-ul text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_exp">Experiencia</a>
+            <a href="#projects"   class="nav-ul text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_projects">Proyectos</a>
+            <a href="#skills"     class="nav-ul text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_skills">Habilidades</a>
+            <a href="#education"  class="nav-ul text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_edu">Educación</a>
+            <a href="#contact"    class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition-all hover:shadow-lg hover:shadow-blue-500/30" data-i18n="nav_contact">Contacto</a>
+        </nav>
+        <div class="hidden lg:flex items-center gap-1 lang-toggle rounded-xl p-1 ml-3">
+            <button id="btn-es" class="lang-on px-3 py-1 rounded-lg text-xs font-semibold transition-all">ES</button>
+            <button id="btn-en" class="lang-off px-3 py-1 rounded-lg text-xs font-semibold transition-all">EN</button>
+        </div>
+        <button id="mobile-btn" class="lg:hidden text-steel-300 hover:text-white transition-colors p-1">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-blue-900/20">
+        <div class="px-6 py-5 flex flex-col gap-4">
+            <a href="#about"      class="mob-link text-steel-200 text-sm hover:text-white transition-colors" data-i18n="nav_about">Sobre mí</a>
+            <a href="#experience" class="mob-link text-steel-200 text-sm hover:text-white transition-colors" data-i18n="nav_exp">Experiencia</a>
+            <a href="#projects"   class="mob-link text-steel-200 text-sm hover:text-white transition-colors" data-i18n="nav_projects">Proyectos</a>
+            <a href="#skills"     class="mob-link text-steel-200 text-sm hover:text-white transition-colors" data-i18n="nav_skills">Habilidades</a>
+            <a href="#education"  class="mob-link text-steel-200 text-sm hover:text-white transition-colors" data-i18n="nav_edu">Educación</a>
+            <a href="#contact"    class="mob-link text-blue-400 text-sm font-semibold" data-i18n="nav_contact">Contacto</a>
+            <div class="flex gap-1 lang-toggle rounded-xl p-1 w-fit">
+                <button id="btn-es-m" class="lang-on px-3 py-1 rounded-lg text-xs font-semibold transition-all">ES</button>
+                <button id="btn-en-m" class="lang-off px-3 py-1 rounded-lg text-xs font-semibold transition-all">EN</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="pt-20">
+
+<!-- ── HERO ── -->
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="orb w-[28rem] h-[28rem] bg-blue-700/20 -top-24 -left-24"></div>
+    <div class="orb w-64 h-64 bg-sky-500/10 bottom-16 right-8"></div>
+    <div class="orb w-44 h-44 bg-indigo-900/22 top-1/2 right-1/3"></div>
+    <div class="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center relative z-10 w-full">
+        <div class="space-y-6">
+            <div class="s-label reveal" data-delay="0" data-i18n="hero_greeting">Hola, soy</div>
+            <h1 class="font-display text-5xl lg:text-6xl font-800 text-white leading-tight reveal" data-delay="80">
+                Andrés <span class="grad-text">Triana</span>
+            </h1>
+            <h2 class="font-display text-lg lg:text-xl font-600 text-steel-300 leading-snug reveal" data-delay="160" data-i18n="hero_role">
+                Business Strategy · Product & Data Strategy · BI & Predictive Modeling · AI-Driven SaaS
+            </h2>
+            <p class="text-steel-300 text-base leading-relaxed max-w-lg reveal" data-delay="240" data-i18n="hero_desc">
+                Transformo datos en inteligencia de negocio que impulsa estrategia y resultados. Combino <strong class="text-blue-300">Product Strategy</strong>, <strong class="text-blue-300">Predictive Modeling</strong> y <strong class="text-blue-300">AI-Driven Analytics</strong> para diseñar soluciones SaaS que optimizan decisiones y generan impacto medible.
+            </p>
+            <div class="flex flex-wrap gap-4 reveal" data-delay="320">
+                <a href="#contact" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5" data-i18n="btn_contact">Contáctame</a>
+                <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" rel="noopener noreferrer"
+                   class="px-6 py-3 g-border rounded-xl text-steel-100 font-semibold hover:text-white transition-all flex items-center gap-2 hover:-translate-y-0.5">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://andrestrisadevelop.github.io/at_portafolio/" target="_blank" rel="noopener noreferrer"
+                   class="px-6 py-3 g-border rounded-xl text-steel-100 font-semibold hover:text-white transition-all flex items-center gap-2 hover:-translate-y-0.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    Blog
+                </a>
+            </div>
+            <div class="flex gap-8 pt-2 reveal" data-delay="400">
+                <div>
+                    <div class="font-display text-2xl font-700 text-white">6+</div>
+                    <div class="text-steel-400 text-xs" data-i18n="stat_years">Años de experiencia</div>
+                </div>
+                <div class="w-px bg-steel-700"></div>
+                <div>
+                    <div class="font-display text-2xl font-700 text-white">3</div>
+                    <div class="text-steel-400 text-xs" data-i18n="stat_industries">Industrias</div>
+                </div>
+                <div class="w-px bg-steel-700"></div>
+                <div>
+                    <div class="font-display text-2xl font-700 text-white">MSc</div>
+                    <div class="text-steel-400 text-xs" data-i18n="stat_master">Visual Analytics & Big Data</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center lg:justify-end reveal" data-delay="160">
+            <div class="relative">
+                <div class="p-ring w-72 h-72 lg:w-80 lg:h-80">
+                    <img src="./Profile.jpg" alt="Andrés Mauricio Triana Sánchez" class="w-full h-full rounded-full object-cover">
+                </div>
+                <div class="pulse-card absolute -bottom-4 -left-4 px-4 py-2 rounded-xl">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        <span class="font-mono text-xs text-blue-200" data-i18n="badge_available">Disponible</span>
+                    </div>
+                </div>
+                <div class="absolute -top-4 -right-4 g-border rounded-xl px-3 py-2">
+                    <span class="font-mono text-xs text-blue-300">Fabric · Python · ML</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-28">
+        <span class="text-steel-400 text-xs font-mono">scroll</span>
+        <div class="w-px h-10 bg-gradient-to-b from-blue-500 to-transparent"></div>
+    </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="reveal">
+            <div class="s-label mb-2">01 — <span data-i18n="about_title">Sobre mí</span></div>
+            <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-10" data-i18n="about_title">Sobre mí</h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-14 items-start">
+            <div class="space-y-5 reveal">
+                <p class="text-steel-200 leading-relaxed" data-i18n="about_p1">
+                    <strong class="text-white">Business Analyst | Data Visualization Specialist | Data Engineering & Predictive Analytics.</strong><br><br>
+                    No gestiono datos — los convierto en inteligencia que mueve estrategias. Mi enfoque integra <strong class="text-blue-300">product strategy</strong>, <strong class="text-blue-300">business analysis</strong> y <strong class="text-blue-300">predictive modeling</strong> para diseñar soluciones SaaS potenciadas por IA que optimizan decisiones, revelan oportunidades de crecimiento y entregan impacto medible.
+                </p>
+                <p class="text-steel-200 leading-relaxed" data-i18n="about_p2">
+                    Opero en la intersección entre negocio y tecnología: traduzco ambigüedad en backlog priorizado, datos crudos en dashboards ejecutivos y requerimientos complejos en features que mueven el marcador. Seis años formando equipos de datos, liderando productos SaaS y ejecutando en ecosistemas de manufactura global.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 reveal" data-delay="150">
+                <div class="g-border rounded-xl p-4 card-h">
+                    <div class="text-blue-400 mb-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+                    <div class="font-semibold text-white text-sm">Business Intelligence</div>
+                    <div class="text-steel-400 text-xs mt-1">Enterprise BI Strategy</div>
+                </div>
+                <div class="g-border rounded-xl p-4 card-h">
+                    <div class="text-sky-400 mb-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                    <div class="font-semibold text-white text-sm">AI & ML Solutions</div>
+                    <div class="text-steel-400 text-xs mt-1">Predictive Modeling</div>
+                </div>
+                <div class="g-border rounded-xl p-4 card-h">
+                    <div class="text-blue-400 mb-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg></div>
+                    <div class="font-semibold text-white text-sm">Product Ownership</div>
+                    <div class="text-steel-400 text-xs mt-1">SaaS · Scrum · Agile</div>
+                </div>
+                <div class="g-border rounded-xl p-4 card-h">
+                    <div class="text-sky-400 mb-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+                    <div class="font-semibold text-white text-sm">Stakeholder Mgmt</div>
+                    <div class="text-steel-400 text-xs mt-1">C-Level · Cross-functional</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience" class="py-24 relative">
+    <div class="absolute inset-0 bg-navy-900/35"></div>
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <div class="reveal">
+            <div class="s-label mb-2">02 — <span data-i18n="exp_title">Experiencia</span></div>
+            <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="exp_title">Experiencia Profesional</h2>
+        </div>
+        <div class="relative pl-10">
+            <div class="tl-line"></div>
+
+            <!-- AspenView CURRENT -->
+            <article class="relative mb-10 reveal" data-delay="0">
+                <div class="absolute -left-10 top-1.5 w-8 h-8 rounded-full bg-blue-600 border-2 border-blue-300 flex items-center justify-center shadow-lg shadow-blue-500/45 z-10">
+                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                </div>
+                <div class="pulse-card rounded-2xl p-6 card-h relative">
+                    <div class="absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1 bg-green-500/10 border border-green-500/25 rounded-full">
+                        <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+                        <span class="font-mono text-green-400 text-xs" data-i18n="badge_present">Actual</span>
+                    </div>
+                    <div class="mb-4 pr-24">
+                        <h3 class="font-display text-xl font-700 text-white" data-i18n="job0_title">Senior Business Analyst</h3>
+                        <div class="text-blue-400 font-semibold text-sm mt-0.5">AspenView Technology Partners <span class="text-steel-500 font-normal">→ Client: Hexcel Composites</span></div>
+                        <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job0_date">Ene 2026 – Presente · 3 meses · Full-time</div>
+                    </div>
+                    <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job0_desc">
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Dirijo el producto de <strong class="text-white">Business Intelligence</strong> para Hexcel Composites en el ecosistema Microsoft: Dynamics 365, AX, Apriso, Azure DevOps y <strong class="text-white">Microsoft Fabric</strong>.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Defino la <strong class="text-white">estrategia BI empresarial</strong> alineando capacidades de datos y reporting con objetivos de negocio a escala global en manufactura y dominios corporativos.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Traduzco datos operativos y financieros complejos en <strong class="text-white">insights accionables</strong> para líderes de negocio, TI y equipos de ingeniería de datos.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Garantizo soluciones BI gobernadas, escalables y de alto impacto a través de dominios de manufactura y corporativos.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="tag-mono px-2.5 py-1 bg-blue-950/58 border border-blue-800/42 text-blue-300 rounded-lg">Microsoft Fabric</span>
+                        <span class="tag-mono px-2.5 py-1 bg-blue-950/58 border border-blue-800/42 text-blue-300 rounded-lg">Dynamics 365</span>
+                        <span class="tag-mono px-2.5 py-1 bg-blue-950/58 border border-blue-800/42 text-blue-300 rounded-lg">Azure DevOps</span>
+                        <span class="tag-mono px-2.5 py-1 bg-blue-950/58 border border-blue-800/42 text-blue-300 rounded-lg">Apriso</span>
+                        <span class="tag-mono px-2.5 py-1 bg-blue-950/58 border border-blue-800/42 text-blue-300 rounded-lg">BI Strategy</span>
+                        <span class="tag-mono px-2.5 py-1 bg-blue-950/58 border border-blue-800/42 text-blue-300 rounded-lg">Product Dev</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Avanto -->
+            <article class="relative mb-10 reveal" data-delay="70">
+                <div class="absolute -left-10 top-1.5 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center z-10">
+                    <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
+                </div>
+                <div class="g-border rounded-2xl p-6 card-h">
+                    <div class="mb-4">
+                        <h3 class="font-display text-xl font-700 text-white" data-i18n="job1_title">Business Analyst & AI Analyst</h3>
+                        <div class="text-blue-400 font-semibold text-sm mt-0.5">Avanto — OrderBahn SaaS <span class="text-steel-500 font-normal">(United States)</span></div>
+                        <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job1_date">May 2023 – Ene 2026 · 2 años 9 meses</div>
+                    </div>
+                    <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job1_desc">
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré captura, análisis y documentación de requerimientos para el sector mobiliario dentro de la plataforma SaaS OrderBahn.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Diseñé e implementé un entorno BI con <strong class="text-white">modelos predictivos ML</strong> para análisis y toma de decisiones operativas.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Optimicé flujos del sector mobiliario mejorando eficiencia operativa y calidad de datos de forma cuantificable.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Implementé dashboards BI para tracking de transacciones, rendimiento de proveedores y modelos de forecasting.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Fundé y estructuré el <strong class="text-white">Departamento de Datos</strong>: estructura, gobernanza y frameworks analíticos desde cero.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Python</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">ML Models</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Power BI</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">SaaS</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Scrum</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Product Owner</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- HK Global -->
+            <article class="relative mb-10 reveal" data-delay="110">
+                <div class="absolute -left-10 top-1.5 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center z-10">
+                    <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
+                </div>
+                <div class="g-border rounded-2xl p-6 card-h">
+                    <div class="mb-4">
+                        <h3 class="font-display text-xl font-700 text-white" data-i18n="job2_title">Project Manager</h3>
+                        <div class="text-blue-400 font-semibold text-sm mt-0.5">HK Global Trading Ltd. <span class="text-steel-500 font-normal">(HKG Duty Free · Colombia)</span></div>
+                        <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job2_date">May 2022 – Oct 2024 · 2 años 6 meses</div>
+                    </div>
+                    <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job2_desc">
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Gestioné planificación e implementación de proyectos TI de alta complejidad, incluyendo integración ERP con <strong class="text-white">AX 2012 R3</strong>.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré desarrollo de plataforma e-commerce e integraciones API para sincronización de inventario en tiempo real.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Implementé procesos de minería de datos para enriquecimiento de catálogo de productos.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré proyectos BI transversales en múltiples departamentos y desarrollé APIs REST para interoperabilidad de sistemas.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">ERP AX 2012</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">REST APIs</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">BI Projects</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Data Mining</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Parameta -->
+            <article class="relative mb-10 reveal" data-delay="150">
+                <div class="absolute -left-10 top-1.5 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center z-10">
+                    <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
+                </div>
+                <div class="g-border rounded-2xl p-6 card-h">
+                    <div class="mb-4">
+                        <h3 class="font-display text-xl font-700 text-white" data-i18n="job3_title">Solutions Specialist</h3>
+                        <div class="text-blue-400 font-semibold text-sm mt-0.5">Paramētā S.A.S. <span class="text-steel-500 font-normal">(Bogotá)</span></div>
+                        <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job3_date">Nov 2022 – Abr 2023 · 6 meses</div>
+                    </div>
+                    <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job3_desc">
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Definí y configuré requerimientos para sistemas de compras empresariales de alta criticidad.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Conduje validación, transformación y preparación de Big Data para analítica de negocio.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Diseñé flujos de pruebas unitarias y QA antes del despliegue a producción.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Big Data</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">QA</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Requirements</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Comfenalco -->
+            <article class="relative mb-10 reveal" data-delay="190">
+                <div class="absolute -left-10 top-1.5 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center z-10">
+                    <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
+                </div>
+                <div class="g-border rounded-2xl p-6 card-h">
+                    <div class="mb-4">
+                        <h3 class="font-display text-xl font-700 text-white" data-i18n="job4_title">Analista Gestión de Información EIVC</h3>
+                        <div class="text-blue-400 font-semibold text-sm mt-0.5">Comfenalco Valle delagente <span class="text-steel-500 font-normal">(Colombia)</span></div>
+                        <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job4_date">Abr 2021 – May 2022 · 1 año 2 meses</div>
+                    </div>
+                    <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job4_desc">
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Diseñé e implementé dashboards BI para entes de control y auditorías externas.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Gestioné y automaticé bases de datos corporativas usando Microsoft 365 y SQL.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré proyectos de innovación: aplicaciones de solicitudes logísticas y sistemas de evaluación de riesgos.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Power BI</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">SQL</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Microsoft 365</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ValleSalud -->
+            <article class="relative reveal" data-delay="230">
+                <div class="absolute -left-10 top-1.5 w-8 h-8 rounded-full bg-steel-800 border-2 border-steel-600 flex items-center justify-center z-10">
+                    <div class="w-2 h-2 bg-steel-400 rounded-full"></div>
+                </div>
+                <div class="g-border rounded-2xl p-6 card-h">
+                    <div class="mb-4">
+                        <h3 class="font-display text-xl font-700 text-white" data-i18n="job5_title">Quality Engineer</h3>
+                        <div class="text-blue-400 font-semibold text-sm mt-0.5">ValleSalud IPS</div>
+                        <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job5_date">Sep 2019 – Abr 2021 · 1 año 8 meses</div>
+                    </div>
+                    <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job5_desc">
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Soporté sistemas de gestión de calidad (QMS) en múltiples departamentos del sector salud.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Conduje mapeo de procesos y análisis para optimizar flujos de trabajo operativos.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Construí y gestioné bases de datos y reportes regulatorios para cumplimiento normativo.</span></li>
+                        <li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré iniciativas de innovación digital en operaciones de salud.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">QMS</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Process Mapping</span>
+                        <span class="tag-mono px-2.5 py-1 bg-steel-800/52 border border-steel-600/38 text-steel-200 rounded-lg">Databases</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="reveal">
+            <div class="s-label mb-2">03 — <span data-i18n="projects_title">Proyectos</span></div>
+            <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="projects_title">Proyectos Destacados</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <article class="g-border rounded-2xl p-6 card-h reveal flex flex-col">
+                <div class="w-10 h-10 rounded-xl bg-blue-600/16 border border-blue-500/26 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+                <h3 class="font-display font-700 text-white text-lg mb-2" data-i18n="proj1_title">SaaS BI Environment — OrderBahn</h3>
+                <p class="text-steel-300 text-sm leading-relaxed mb-4 flex-1" data-i18n="proj1_desc">Entorno BI completo con modelos predictivos ML, dashboards KPI para proveedores y forecasting para plataforma SaaS del sector mobiliario.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">Python</span>
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">Power BI</span>
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">ML</span>
+                </div>
+            </article>
+            <article class="g-border rounded-2xl p-6 card-h reveal flex flex-col" data-delay="100">
+                <div class="w-10 h-10 rounded-xl bg-blue-600/16 border border-blue-500/26 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                </div>
+                <h3 class="font-display font-700 text-white text-lg mb-2" data-i18n="proj2_title">E-commerce & API Integration</h3>
+                <p class="text-steel-300 text-sm leading-relaxed mb-4 flex-1" data-i18n="proj2_desc">Tienda Magento con sincronización de inventario en tiempo real vía APIs REST y pipeline de datos integrado para Daniels Home Center.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">Magento</span>
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">REST API</span>
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">ETL</span>
+                </div>
+            </article>
+            <article class="g-border rounded-2xl p-6 card-h reveal flex flex-col" data-delay="200">
+                <div class="w-10 h-10 rounded-xl bg-blue-600/16 border border-blue-500/26 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M10 11l2 2 4-4M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                </div>
+                <h3 class="font-display font-700 text-white text-lg mb-2" data-i18n="proj3_title">ERP Integration AX 2012</h3>
+                <p class="text-steel-300 text-sm leading-relaxed mb-4 flex-1" data-i18n="proj3_desc">Integración ERP completa con AX 2012 R3, interoperabilidad vía APIs REST y proyectos BI transversales para HK Global Trading.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">AX 2012</span>
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">ERP</span>
+                    <span class="tag-mono px-2 py-0.5 bg-steel-800/52 border border-steel-600/33 text-steel-300 rounded">REST APIs</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" class="py-24 relative">
+    <div class="absolute inset-0 bg-navy-900/35"></div>
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <div class="reveal">
+            <div class="s-label mb-2">04 — <span data-i18n="skills_title">Habilidades</span></div>
+            <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="skills_title">Habilidades & Tecnologías</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10 mb-14">
+            <div class="reveal">
+                <div class="cat-title mb-5">Analytics & BI</div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Microsoft Fabric / Power BI</span><span class="font-mono text-xs text-blue-400">95%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:95%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">SQL / Data Modeling / DAX</span><span class="font-mono text-xs text-blue-400">90%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:90%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Azure / Dynamics 365</span><span class="font-mono text-xs text-blue-400">85%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:85%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Microsoft Power Platform</span><span class="font-mono text-xs text-blue-400">88%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:88%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal" data-delay="100">
+                <div class="cat-title mb-5">AI, ML & Engineering</div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Python (Pandas · Scikit-learn · NumPy)</span><span class="font-mono text-xs text-blue-400">82%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:82%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Machine Learning & Predictive Modeling</span><span class="font-mono text-xs text-blue-400">80%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:80%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">AI-Driven Solutions / LLM Integration</span><span class="font-mono text-xs text-blue-400">78%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:78%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">REST APIs / Git / ETL Pipelines</span><span class="font-mono text-xs text-blue-400">85%</span></div>
+                        <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="bar-fill h-full rounded-full" style="width:85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal" data-delay="150">
+            <div class="skill-group">
+                <div class="cat-title mb-3">Data & BI</div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Microsoft Fabric</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Power BI</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Power Platform</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">SQL</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">DAX</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">ETL</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Tableau</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="cat-title mb-3">AI & Engineering</div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Python</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Scikit-learn</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Pandas</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">NumPy</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">ML Models</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">LLMs</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">REST APIs</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Git</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="cat-title mb-3">Microsoft Cloud</div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Azure DevOps</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Dynamics 365</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Azure AI</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Apriso</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">AX 2012</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">M365</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="cat-title mb-3">Product & Mgmt</div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Scrum</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Product Owner</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Jira</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Stakeholders</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Magento</span>
+                    <span class="tag-mono px-2 py-1 g-border rounded-lg text-steel-200 text-xs">Agile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="reveal">
+            <div class="s-label mb-2">05 — <span data-i18n="edu_title">Educación</span></div>
+            <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="edu_title">Educación & Certificaciones</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="reveal">
+                <h3 class="font-display font-700 text-white text-xl mb-5" data-i18n="edu_degrees">Títulos Académicos</h3>
+                <div class="space-y-4">
+                    <div class="g-border rounded-xl p-5 card-h">
+                        <div class="text-blue-400 font-mono text-xs mb-1">Jun 2022 – Dic 2024</div>
+                        <div class="font-display font-700 text-white">MEng, Visual Analytics & Big Data</div>
+                        <div class="text-steel-300 text-sm mt-0.5">UNIR – La Universidad en Internet</div>
+                    </div>
+                    <div class="g-border rounded-xl p-5 card-h">
+                        <div class="text-blue-400 font-mono text-xs mb-1">Oct 2024 – Ene 2025</div>
+                        <div class="font-display font-700 text-white">Digital Project Manager</div>
+                        <div class="text-steel-300 text-sm mt-0.5">MIU City University Miami</div>
+                    </div>
+                    <div class="g-border rounded-xl p-5 card-h">
+                        <div class="text-blue-400 font-mono text-xs mb-1">2012 – 2018</div>
+                        <div class="font-display font-700 text-white">B.Eng, Industrial Engineering</div>
+                        <div class="text-steel-300 text-sm mt-0.5">Universidad de Ibagué</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal" data-delay="100">
+                <h3 class="font-display font-700 text-white text-xl mb-5" data-i18n="cert_title">Certificaciones</h3>
+                <div class="space-y-3">
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Azure AI Fundamentals</div><div class="text-steel-500 text-xs font-mono">Microsoft Certified</div></div></div>
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Iniciación al Desarrollo con IA</div><div class="text-steel-500 text-xs font-mono">LinkedIn Learning</div></div></div>
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Data Analysis Professional Skills</div><div class="text-steel-500 text-xs font-mono">Microsoft & LinkedIn · Coursera</div></div></div>
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Data Storytelling — Cuenta historias con datos</div><div class="text-steel-500 text-xs font-mono">LinkedIn Learning</div></div></div>
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Fundamentos Esenciales de Programación</div><div class="text-steel-500 text-xs font-mono">LinkedIn Learning</div></div></div>
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Leadership Continuing Education</div><div class="text-steel-500 text-xs font-mono">Certificate Program</div></div></div>
+                    <div class="cert-item"><div class="w-8 h-8 rounded-lg bg-blue-600/16 border border-blue-500/26 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg></div><div><div class="text-steel-100 text-sm font-medium">Internal Auditor — HSEQ Systems</div><div class="text-steel-500 text-xs font-mono">Integrated Quality Systems</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-navy-900/35"></div>
+    <div class="orb w-72 h-72 bg-blue-800/16 -top-10 right-0"></div>
+    <div class="orb w-44 h-44 bg-sky-900/13 bottom-0 left-10"></div>
+    <div class="max-w-2xl mx-auto px-6 relative z-10">
+        <div class="text-center reveal">
+            <div class="s-label mb-2">06 — <span data-i18n="contact_title">Contacto</span></div>
+            <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-4" data-i18n="contact_title">Contacto</h2>
+            <p class="text-steel-300 mb-10" data-i18n="contact_intro">¿Interesado en colaborar o tienes alguna pregunta? Envíame un mensaje.</p>
+        </div>
+        <form class="space-y-5 reveal" action="mailto:andresm3000@gmail.com" method="post" enctype="text/plain">
+            <div>
+                <label class="block text-steel-300 text-sm font-medium mb-2" data-i18n="form_name">Nombre</label>
+                <input type="text" name="name" required placeholder="Tu nombre" class="w-full px-4 py-3 text-sm">
+            </div>
+            <div>
+                <label class="block text-steel-300 text-sm font-medium mb-2" data-i18n="form_email">Email</label>
+                <input type="email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 text-sm">
+            </div>
+            <div>
+                <label class="block text-steel-300 text-sm font-medium mb-2" data-i18n="form_msg">Mensaje</label>
+                <textarea name="message" rows="5" required placeholder="¿Cómo puedo ayudarte?" class="w-full px-4 py-3 text-sm resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-blue-500/28 hover:-translate-y-0.5" data-i18n="btn_send">Enviar Mensaje</button>
+        </form>
+        <div class="flex justify-center gap-5 mt-10 reveal">
+            <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" rel="noopener noreferrer" class="w-12 h-12 g-border rounded-xl flex items-center justify-center text-steel-300 hover:text-blue-400 transition-colors card-h" aria-label="LinkedIn">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-8">
-                <a href="#about" class="nav-link-animated text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_about">Sobre mí</a>
-                <a href="#experience" class="nav-link-animated text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_exp">Experiencia</a>
-                <a href="#projects" class="nav-link-animated text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_projects">Proyectos</a>
-                <a href="#skills" class="nav-link-animated text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_skills">Habilidades</a>
-                <a href="#education" class="nav-link-animated text-steel-200 hover:text-white text-sm font-medium transition-colors" data-i18n="nav_edu">Educación</a>
-                <a href="#contact" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition-all hover:shadow-lg hover:shadow-blue-500/30" data-i18n="nav_contact">Contacto</a>
-            </nav>
-
-            <!-- Lang Toggle -->
-            <div class="hidden lg:flex items-center gap-1 lang-toggle rounded-lg p-1 ml-4">
-                <button id="lang-es" class="lang-active px-3 py-1 rounded-md text-xs font-semibold transition-all">ES</button>
-                <button id="lang-en" class="px-3 py-1 rounded-md text-xs font-semibold text-steel-300 transition-all">EN</button>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-btn" class="lg:hidden text-steel-200 hover:text-white transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
+            <a href="mailto:andresm3000@gmail.com" class="w-12 h-12 g-border rounded-xl flex items-center justify-center text-steel-300 hover:text-blue-400 transition-colors card-h" aria-label="Email">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a href="https://andrestrisadevelop.github.io/at_portafolio/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 g-border rounded-xl flex items-center justify-center text-steel-300 hover:text-blue-400 transition-colors card-h" aria-label="Blog">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
         </div>
+        <p class="text-center text-steel-500 text-sm mt-5">📍 Cali, Valle del Cauca, Colombia</p>
+    </div>
+</section>
+</main>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-blue-900/30">
-            <div class="px-6 py-4 flex flex-col gap-4">
-                <a href="#about" class="mobile-nav text-steel-200 hover:text-white text-sm transition-colors" data-i18n="nav_about">Sobre mí</a>
-                <a href="#experience" class="mobile-nav text-steel-200 hover:text-white text-sm transition-colors" data-i18n="nav_exp">Experiencia</a>
-                <a href="#projects" class="mobile-nav text-steel-200 hover:text-white text-sm transition-colors" data-i18n="nav_projects">Proyectos</a>
-                <a href="#skills" class="mobile-nav text-steel-200 hover:text-white text-sm transition-colors" data-i18n="nav_skills">Habilidades</a>
-                <a href="#education" class="mobile-nav text-steel-200 hover:text-white text-sm transition-colors" data-i18n="nav_edu">Educación</a>
-                <a href="#contact" class="mobile-nav text-blue-400 font-semibold text-sm transition-colors" data-i18n="nav_contact">Contacto</a>
-                <div class="flex items-center gap-1 lang-toggle rounded-lg p-1 w-fit mt-2">
-                    <button id="lang-es-mobile" class="lang-active px-3 py-1 rounded-md text-xs font-semibold transition-all">ES</button>
-                    <button id="lang-en-mobile" class="px-3 py-1 rounded-md text-xs font-semibold text-steel-300 transition-all">EN</button>
-                </div>
-            </div>
-        </div>
-    </header>
+<footer class="border-t border-steel-800/38 py-7">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <span class="font-display font-700 text-white">Andrés Triana</span>
+        <span class="text-steel-600 text-sm">© 2025 Andrés Mauricio Triana Sánchez</span>
+        <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm transition-colors">LinkedIn →</a>
+    </div>
+</footer>
 
+<script>
+const T={
+    es:{
+        nav_about:'Sobre mí',nav_exp:'Experiencia',nav_projects:'Proyectos',nav_skills:'Habilidades',nav_edu:'Educación',nav_contact:'Contacto',
+        hero_greeting:'Hola, soy',
+        hero_role:'Business Strategy · Product & Data Strategy · BI & Predictive Modeling · AI-Driven SaaS',
+        hero_desc:'Transformo datos en inteligencia de negocio que impulsa estrategia y resultados. Combino <strong class="text-blue-300">Product Strategy</strong>, <strong class="text-blue-300">Predictive Modeling</strong> y <strong class="text-blue-300">AI-Driven Analytics</strong> para diseñar soluciones SaaS que optimizan decisiones y generan impacto medible.',
+        btn_contact:'Contáctame',stat_years:'Años de experiencia',stat_industries:'Industrias',stat_master:'Visual Analytics & Big Data',
+        badge_available:'Disponible',badge_present:'Actual',
+        about_title:'Sobre mí',
+        about_p1:'<strong class="text-white">Business Analyst | Data Visualization Specialist | Data Engineering & Predictive Analytics.</strong><br><br>No gestiono datos — los convierto en inteligencia que mueve estrategias. Mi enfoque integra <strong class="text-blue-300">product strategy</strong>, <strong class="text-blue-300">business analysis</strong> y <strong class="text-blue-300">predictive modeling</strong> para diseñar soluciones SaaS potenciadas por IA que optimizan decisiones, revelan oportunidades de crecimiento y entregan impacto medible.',
+        about_p2:'Opero en la intersección entre negocio y tecnología: traduzco ambigüedad en backlog priorizado, datos crudos en dashboards ejecutivos y requerimientos complejos en features que mueven el marcador. Seis años formando equipos de datos, liderando productos SaaS y ejecutando en ecosistemas de manufactura global.',
+        exp_title:'Experiencia Profesional',
+        job0_title:'Senior Business Analyst',job0_date:'Ene 2026 – Presente · 3 meses · Full-time',
+        job0_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Dirijo el producto de <strong class="text-white">Business Intelligence</strong> para Hexcel Composites en el ecosistema Microsoft: Dynamics 365, AX, Apriso, Azure DevOps y <strong class="text-white">Microsoft Fabric</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Defino la <strong class="text-white">estrategia BI empresarial</strong> alineando capacidades de datos y reporting con objetivos de negocio a escala global.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Traduzco datos operativos y financieros complejos en <strong class="text-white">insights accionables</strong> para líderes de negocio, TI y equipos de ingeniería de datos.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Garantizo soluciones BI gobernadas, escalables y de alto impacto en manufactura y dominios corporativos.</span></li>',
+        job1_title:'Business Analyst & AI Analyst',job1_date:'May 2023 – Ene 2026 · 2 años 9 meses',
+        job1_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré captura, análisis y documentación de requerimientos para el sector mobiliario dentro de la plataforma SaaS OrderBahn.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Diseñé e implementé un entorno BI con <strong class="text-white">modelos predictivos ML</strong> para análisis y toma de decisiones operativas.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Optimicé flujos del sector mobiliario mejorando eficiencia operativa y calidad de datos de forma cuantificable.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Implementé dashboards BI para tracking de transacciones, rendimiento de proveedores y modelos de forecasting.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Fundé y estructuré el <strong class="text-white">Departamento de Datos</strong>: estructura, gobernanza y frameworks analíticos desde cero.</span></li>',
+        job2_title:'Project Manager',job2_date:'May 2022 – Oct 2024 · 2 años 6 meses',
+        job2_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Gestioné planificación e implementación de proyectos TI de alta complejidad, incluyendo integración ERP con <strong class="text-white">AX 2012 R3</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré desarrollo de plataforma e-commerce e integraciones API para sincronización de inventario en tiempo real.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Implementé procesos de minería de datos para enriquecimiento de catálogo de productos.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré proyectos BI transversales en múltiples departamentos y desarrollé APIs REST para interoperabilidad de sistemas.</span></li>',
+        job3_title:'Solutions Specialist',job3_date:'Nov 2022 – Abr 2023 · 6 meses',
+        job3_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Definí y configuré requerimientos para sistemas de compras empresariales de alta criticidad.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Conduje validación, transformación y preparación de Big Data para analítica de negocio.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Diseñé flujos de pruebas unitarias y QA antes del despliegue a producción.</span></li>',
+        job4_title:'Analista Gestión de Información EIVC',job4_date:'Abr 2021 – May 2022 · 1 año 2 meses',
+        job4_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Diseñé e implementé dashboards BI para entes de control y auditorías externas.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Gestioné y automaticé bases de datos corporativas usando Microsoft 365 y SQL.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré proyectos de innovación: aplicaciones logísticas y sistemas de evaluación de riesgos.</span></li>',
+        job5_title:'Quality Engineer',job5_date:'Sep 2019 – Abr 2021 · 1 año 8 meses',
+        job5_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Soporté sistemas de gestión de calidad (QMS) en múltiples departamentos del sector salud.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Conduje mapeo de procesos y análisis para optimizar flujos de trabajo operativos.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Construí y gestioné bases de datos y reportes regulatorios para cumplimiento normativo.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lideré iniciativas de innovación digital en operaciones de salud.</span></li>',
+        projects_title:'Proyectos Destacados',
+        proj1_title:'SaaS BI Environment — OrderBahn',proj1_desc:'Entorno BI completo con modelos predictivos ML, dashboards KPI para proveedores y forecasting para plataforma SaaS del sector mobiliario.',
+        proj2_title:'E-commerce & API Integration',proj2_desc:'Tienda Magento con sincronización de inventario en tiempo real vía APIs REST y pipeline de datos integrado para Daniels Home Center.',
+        proj3_title:'ERP Integration AX 2012',proj3_desc:'Integración ERP completa con AX 2012 R3, interoperabilidad vía APIs REST y proyectos BI transversales para HK Global Trading.',
+        skills_title:'Habilidades & Tecnologías',
+        edu_title:'Educación & Certificaciones',edu_degrees:'Títulos Académicos',cert_title:'Certificaciones',
+        contact_title:'Contacto',contact_intro:'¿Interesado en colaborar o tienes alguna pregunta? Envíame un mensaje.',
+        form_name:'Nombre',form_email:'Email',form_msg:'Mensaje',btn_send:'Enviar Mensaje'
+    },
+    en:{
+        nav_about:'About Me',nav_exp:'Experience',nav_projects:'Projects',nav_skills:'Skills',nav_edu:'Education',nav_contact:'Contact',
+        hero_greeting:"Hi, I'm",
+        hero_role:'Business Strategy · Product & Data Strategy · BI & Predictive Modeling · AI-Driven SaaS',
+        hero_desc:'I turn data into business intelligence that drives strategy and measurable results. I blend <strong class="text-blue-300">Product Strategy</strong>, <strong class="text-blue-300">Predictive Modeling</strong>, and <strong class="text-blue-300">AI-Driven Analytics</strong> to design SaaS solutions that optimize decisions and unlock growth.',
+        btn_contact:'Contact Me',stat_years:'Years experience',stat_industries:'Industries',stat_master:'Visual Analytics & Big Data',
+        badge_available:'Open to work',badge_present:'Current',
+        about_title:'About Me',
+        about_p1:'<strong class="text-white">Business Analyst | Data Visualization Specialist | Data Engineering & Predictive Analytics.</strong><br><br>I don\'t manage data — I turn it into intelligence that drives strategy. My approach blends <strong class="text-blue-300">product strategy</strong>, <strong class="text-blue-300">business analysis</strong>, and <strong class="text-blue-300">predictive modeling</strong> to design AI-powered SaaS solutions that optimize decisions, uncover growth opportunities, and deliver measurable impact.',
+        about_p2:"I operate at the intersection of business and technology: translating ambiguity into a prioritized backlog, raw data into executive dashboards, and complex requirements into features that move the needle. Six years building data teams, leading SaaS products, and executing across global manufacturing ecosystems.",
+        exp_title:'Professional Experience',
+        job0_title:'Senior Business Analyst',job0_date:'Jan 2026 – Present · 3 months · Full-time',
+        job0_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Lead the <strong class="text-white">Business Intelligence product</strong> for Hexcel Composites across the Microsoft ecosystem: Dynamics 365, AX, Apriso, Azure DevOps, and <strong class="text-white">Microsoft Fabric</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Define the <strong class="text-white">enterprise BI strategy</strong>, aligning data and reporting capabilities with business objectives at global scale.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Translate complex operational and financial data into <strong class="text-white">actionable insights</strong> for business leaders, IT, and data engineering teams.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Ensure scalable, governed, and high-impact BI solutions across manufacturing and corporate domains.</span></li>',
+        job1_title:'Business Analyst & AI Analyst',job1_date:'May 2023 – Jan 2026 · 2 years 9 months',
+        job1_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Elicited, analyzed, and documented requirements for the furniture sector within the OrderBahn SaaS platform.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Designed and implemented a BI environment with <strong class="text-white">ML predictive models</strong> for operational decision-making.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Optimized furniture workflows, improving operational efficiency and data quality in measurable ways.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Implemented BI dashboards for transaction tracking, supplier performance, and forecasting models.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Founded and structured the <strong class="text-white">Data Department</strong>: structure, governance, and analytical frameworks from scratch.</span></li>',
+        job2_title:'Project Manager',job2_date:'May 2022 – Oct 2024 · 2 years 6 months',
+        job2_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Managed planning and implementation of high-complexity IT projects, including ERP integration with <strong class="text-white">AX 2012 R3</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Led e-commerce platform development and API integrations for real-time inventory synchronization.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Implemented data mining for product catalog enrichment.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Led cross-departmental BI projects and developed REST APIs for system interoperability.</span></li>',
+        job3_title:'Solutions Specialist',job3_date:'Nov 2022 – Apr 2023 · 6 months',
+        job3_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Defined and configured high-criticality purchasing system requirements.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Conducted big data validation, transformation, and preparation for business analytics.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Designed unit testing and QA workflows before production rollout.</span></li>',
+        job4_title:'Information Management Analyst',job4_date:'Apr 2021 – May 2022 · 1 year 2 months',
+        job4_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Designed and implemented BI dashboards for control entities and external audits.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Managed and automated corporate databases using Microsoft 365 and SQL.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Led innovation projects: logistics request apps and risk evaluation systems.</span></li>',
+        job5_title:'Quality Engineer',job5_date:'Sep 2019 – Apr 2021 · 1 year 8 months',
+        job5_desc:'<li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Supported quality management systems (QMS) across healthcare departments.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Conducted process mapping and analysis to optimize operational workflows.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Built and managed databases and regulatory reports for compliance.</span></li><li class="flex gap-2"><span class="text-blue-400 flex-shrink-0 mt-0.5">▸</span><span>Led digital innovation initiatives within healthcare operations.</span></li>',
+        projects_title:'Featured Projects',
+        proj1_title:'SaaS BI Environment — OrderBahn',proj1_desc:'Full BI environment with ML predictive models, supplier KPI dashboards, and forecasting for the furniture-sector SaaS platform.',
+        proj2_title:'E-commerce & API Integration',proj2_desc:'Magento store with real-time inventory sync via custom REST APIs and integrated data pipeline for Daniels Home Center.',
+        proj3_title:'ERP Integration AX 2012',proj3_desc:'Full ERP integration with AX 2012 R3, REST API interoperability, and cross-departmental BI projects for HK Global Trading.',
+        skills_title:'Skills & Technologies',
+        edu_title:'Education & Certifications',edu_degrees:'Academic Degrees',cert_title:'Certifications',
+        contact_title:'Contact',contact_intro:'Interested in collaborating or have a question? Send me a message.',
+        form_name:'Name',form_email:'Email',form_msg:'Message',btn_send:'Send Message'
+    }
+};
 
-    <main class="pt-20">
+let lang='es';
+function setLang(l){
+    lang=l;
+    const t=T[l];
+    document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(t[k]!==undefined)el.innerHTML=t[k]});
+    ['btn-es','btn-es-m'].forEach(id=>{const b=document.getElementById(id);if(b)b.className=l==='es'?'lang-on px-3 py-1 rounded-lg text-xs font-semibold transition-all':'lang-off px-3 py-1 rounded-lg text-xs font-semibold transition-all'});
+    ['btn-en','btn-en-m'].forEach(id=>{const b=document.getElementById(id);if(b)b.className=l==='en'?'lang-on px-3 py-1 rounded-lg text-xs font-semibold transition-all':'lang-off px-3 py-1 rounded-lg text-xs font-semibold transition-all'});
+}
+['btn-es','btn-es-m'].forEach(id=>document.getElementById(id)?.addEventListener('click',()=>setLang('es')));
+['btn-en','btn-en-m'].forEach(id=>document.getElementById(id)?.addEventListener('click',()=>setLang('en')));
 
-        <!-- ─── HERO ─── -->
-        <section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
-            <!-- Orbs -->
-            <div class="orb w-96 h-96 bg-blue-700/20 top-20 -left-20"></div>
-            <div class="orb w-64 h-64 bg-sky-500/10 bottom-20 right-10"></div>
-            <div class="orb w-48 h-48 bg-blue-900/30 top-1/2 right-1/4"></div>
+const mBtn=document.getElementById('mobile-btn'),mMenu=document.getElementById('mobile-menu');
+mBtn.addEventListener('click',()=>mMenu.classList.toggle('hidden'));
+document.querySelectorAll('.mob-link').forEach(l=>l.addEventListener('click',()=>mMenu.classList.add('hidden')));
 
-            <div class="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-                
-                <!-- Text -->
-                <div class="space-y-6">
-                    <div class="section-label reveal" data-delay="0">
-                        <span data-i18n="hero_greeting">Hola, soy</span>
-                    </div>
-
-                    <h1 class="font-display text-5xl lg:text-6xl font-800 text-white leading-tight reveal" data-delay="100">
-                        Andrés <span class="gradient-text">Triana</span>
-                    </h1>
-
-                    <h2 class="font-display text-xl lg:text-2xl font-600 text-steel-300 reveal" data-delay="200" data-i18n="hero_role">
-                        Senior Business Analyst & Product Owner
-                    </h2>
-
-                    <p class="text-steel-300 text-base leading-relaxed max-w-lg reveal" data-delay="300" data-i18n="hero_desc">
-                        Convierto datos complejos en decisiones estratégicas. Especialista en <strong class="text-blue-300">SaaS</strong>, <strong class="text-blue-300">Microsoft Fabric</strong> y <strong class="text-blue-300">AI-Driven Analytics</strong> — alineando tecnología con impacto real de negocio.
-                    </p>
-
-                    <div class="flex flex-wrap gap-4 reveal" data-delay="400">
-                        <a href="#contact" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5" data-i18n="btn_contact">
-                            Contáctame
-                        </a>
-                        <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" rel="noopener noreferrer"
-                            class="px-6 py-3 border-gradient rounded-xl text-steel-100 font-semibold hover:text-white transition-all flex items-center gap-2 hover:-translate-y-0.5">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                            LinkedIn
-                        </a>
-                    </div>
-
-                    <!-- Stats row -->
-                    <div class="flex gap-8 pt-4 reveal" data-delay="500">
-                        <div>
-                            <div class="font-display text-2xl font-700 text-white">5+</div>
-                            <div class="text-steel-400 text-xs" data-i18n="stat_years">Años de experiencia</div>
-                        </div>
-                        <div class="w-px bg-steel-700"></div>
-                        <div>
-                            <div class="font-display text-2xl font-700 text-white">3</div>
-                            <div class="text-steel-400 text-xs" data-i18n="stat_countries">Países</div>
-                        </div>
-                        <div class="w-px bg-steel-700"></div>
-                        <div>
-                            <div class="font-display text-2xl font-700 text-white">10+</div>
-                            <div class="text-steel-400 text-xs" data-i18n="stat_projects">Proyectos entregados</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Profile Image -->
-                <div class="flex justify-center lg:justify-end reveal" data-delay="200">
-                    <div class="relative">
-                        <div class="profile-ring rounded-full w-72 h-72 lg:w-80 lg:h-80">
-                            <img src="./Profile.jpg" alt="Andrés Mauricio Triana Sánchez"
-                                class="w-full h-full rounded-full object-cover">
-                        </div>
-                        <!-- Floating badge -->
-                        <div class="badge-current absolute -bottom-4 -left-4 px-4 py-2 rounded-xl">
-                            <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                                <span class="font-mono text-xs text-blue-200" data-i18n="badge_available">Disponible</span>
-                            </div>
-                        </div>
-                        <!-- Tech badge -->
-                        <div class="absolute -top-4 -right-4 border-gradient rounded-xl px-3 py-2">
-                            <span class="font-mono text-xs text-blue-300">Microsoft Fabric</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Scroll indicator -->
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-                <span class="text-steel-400 text-xs font-mono">scroll</span>
-                <div class="w-px h-12 bg-gradient-to-b from-blue-500 to-transparent"></div>
-            </div>
-        </section>
-
-
-        <!-- ─── ABOUT ─── -->
-        <section id="about" class="py-24 relative">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="reveal">
-                    <div class="section-label mb-3">01 — <span data-i18n="about_title">Sobre mí</span></div>
-                    <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="about_title">Sobre mí</h2>
-                </div>
-
-                <div class="grid lg:grid-cols-2 gap-12 items-start">
-                    <div class="space-y-5 reveal">
-                        <p class="text-steel-200 leading-relaxed" data-i18n="about_p1">
-                            Soy un <strong class="text-white">Senior Business Analyst</strong> y <strong class="text-white">Product Owner</strong> con un enfoque implacable en resultados. No gestiono requerimientos — defino el puente entre la visión de negocio y la ejecución técnica. Mi metodología <strong class="text-blue-300">AI Way of Work</strong> integra inteligencia artificial como palanca estratégica, no como tendencia.
-                        </p>
-                        <p class="text-steel-200 leading-relaxed" data-i18n="about_p2">
-                            Lidero equipos bajo <strong class="text-white">Scrum</strong> convirtiendo ambigüedad en productos digitales con impacto medible. Combino rigor técnico en datos con inteligencia de negocio para garantizar que cada feature entregada mueva el marcador.
-                        </p>
-                    </div>
-
-                    <!-- Key areas -->
-                    <div class="grid grid-cols-2 gap-4 reveal" data-delay="200">
-                        <div class="border-gradient rounded-xl p-4 card-hover">
-                            <div class="text-blue-400 mb-2">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                            </div>
-                            <div class="font-semibold text-white text-sm">Business Intelligence</div>
-                            <div class="text-steel-400 text-xs mt-1">Enterprise BI Strategy</div>
-                        </div>
-                        <div class="border-gradient rounded-xl p-4 card-hover">
-                            <div class="text-sky-400 mb-2">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                            </div>
-                            <div class="font-semibold text-white text-sm">AI Way of Work</div>
-                            <div class="text-steel-400 text-xs mt-1">AI-Driven Workflows</div>
-                        </div>
-                        <div class="border-gradient rounded-xl p-4 card-hover">
-                            <div class="text-blue-400 mb-2">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-                            </div>
-                            <div class="font-semibold text-white text-sm">Product Ownership</div>
-                            <div class="text-steel-400 text-xs mt-1">SaaS Product Strategy</div>
-                        </div>
-                        <div class="border-gradient rounded-xl p-4 card-hover">
-                            <div class="text-sky-400 mb-2">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            </div>
-                            <div class="font-semibold text-white text-sm">Stakeholder Mgmt</div>
-                            <div class="text-steel-400 text-xs mt-1">C-Level Alignment</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ─── EXPERIENCE ─── -->
-        <section id="experience" class="py-24 relative">
-            <div class="absolute inset-0 bg-navy-900/40"></div>
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <div class="reveal">
-                    <div class="section-label mb-3">02 — <span data-i18n="exp_title">Experiencia</span></div>
-                    <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="exp_title">Experiencia Profesional</h2>
-                </div>
-
-                <div class="relative pl-10">
-                    <div class="timeline-line"></div>
-
-                    <!-- ★ NEW: Job 0 – AspenView / Hexcel -->
-                    <article class="relative mb-10 reveal" data-delay="0">
-                        <div class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-blue-600 border-2 border-blue-400 flex items-center justify-center shadow-lg shadow-blue-500/40">
-                            <div class="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                        <div class="border-gradient rounded-2xl p-6 card-hover badge-current relative">
-                            <div class="absolute top-4 right-4">
-                                <span class="flex items-center gap-1.5 px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-xs font-mono">
-                                    <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
-                                    <span data-i18n="badge_present">Actual</span>
-                                </span>
-                            </div>
-                            <div class="mb-4">
-                                <h3 class="font-display text-xl font-700 text-white" data-i18n="job0_title">Senior Business Analyst</h3>
-                                <div class="text-blue-400 font-semibold text-sm mt-1">AspenView Technology Partners</div>
-                                <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job0_date">Ene 2026 – Presente · 3 meses</div>
-                            </div>
-                            <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job0_desc">
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Dirijo el producto de <strong class="text-white">Business Intelligence</strong> para Hexcel Composites en el ecosistema Microsoft — abarcando Dynamics 365, AX, Apriso, Azure DevOps y <strong class="text-white">Microsoft Fabric</strong>.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Defino la <strong class="text-white">estrategia BI empresarial</strong>, alineando capacidades de datos y reporting con los objetivos de negocio a escala global.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Traduzco datos operativos y financieros complejos en <strong class="text-white">insights accionables</strong> para líderes de negocio, TI y equipos de ingeniería de datos.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Garantizo soluciones BI escalables y gobernadas en dominios de manufactura y corporativos.</span></li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-5">
-                                <span class="tag-pill px-2.5 py-1 bg-blue-950/60 border border-blue-800/50 text-blue-300 rounded-lg">Microsoft Fabric</span>
-                                <span class="tag-pill px-2.5 py-1 bg-blue-950/60 border border-blue-800/50 text-blue-300 rounded-lg">Dynamics 365</span>
-                                <span class="tag-pill px-2.5 py-1 bg-blue-950/60 border border-blue-800/50 text-blue-300 rounded-lg">Azure DevOps</span>
-                                <span class="tag-pill px-2.5 py-1 bg-blue-950/60 border border-blue-800/50 text-blue-300 rounded-lg">BI Strategy</span>
-                                <span class="tag-pill px-2.5 py-1 bg-blue-950/60 border border-blue-800/50 text-blue-300 rounded-lg">Apriso</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Job 1 – Avanto / OrderBahn -->
-                    <article class="relative mb-10 reveal" data-delay="100">
-                        <div class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center">
-                            <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
-                        </div>
-                        <div class="border-gradient rounded-2xl p-6 card-hover">
-                            <div class="mb-4">
-                                <h3 class="font-display text-xl font-700 text-white" data-i18n="job1_title">Senior Business Analyst & AI Analyst</h3>
-                                <div class="text-blue-400 font-semibold text-sm mt-1">Avanto — OrderBahn SaaS</div>
-                                <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job1_date">2023 – 2025</div>
-                            </div>
-                            <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job1_desc">
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Lideré el <strong class="text-white">Diseño y Desarrollo de Producto</strong> para la plataforma SaaS OrderBahn bajo Scrum — de requerimiento a release.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Desplegué <strong class="text-white">AI Driven Solutions</strong> con modelos predictivos que optimizaron flujos críticos en el sector mobiliario.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Estructuré el Departamento de Datos desde cero, estableciendo gobernanza y estrategia Analytics para la toma de decisiones ejecutiva.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Gestioné el backlog priorizando features por valor de negocio y señales de datos.</span></li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-5">
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">SaaS</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">AI Solutions</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">Scrum</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">Product Owner</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Job 2 – Consulting -->
-                    <article class="relative mb-10 reveal" data-delay="150">
-                        <div class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center">
-                            <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
-                        </div>
-                        <div class="border-gradient rounded-2xl p-6 card-hover">
-                            <div class="mb-4">
-                                <h3 class="font-display text-xl font-700 text-white" data-i18n="job2_title">Independent Consulting</h3>
-                                <div class="text-blue-400 font-semibold text-sm mt-1">Daniels Home Center</div>
-                                <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job2_date">2023 – Presente</div>
-                            </div>
-                            <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job2_desc">
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Diseñé y desplegué e-commerce Magento con sincronización de inventario en tiempo real vía APIs REST.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Implementé soluciones API personalizadas que eliminaron cuellos de botella operativos críticos.</span></li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-5">
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">Magento</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">REST API</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">E-commerce</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Job 3 – HK Global -->
-                    <article class="relative mb-10 reveal" data-delay="200">
-                        <div class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center">
-                            <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
-                        </div>
-                        <div class="border-gradient rounded-2xl p-6 card-hover">
-                            <div class="mb-4">
-                                <h3 class="font-display text-xl font-700 text-white" data-i18n="job3_title">Project Engineer</h3>
-                                <div class="text-blue-400 font-semibold text-sm mt-1">HK Global Training (HKG Duty Free)</div>
-                                <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job3_date">2022 – 2024</div>
-                            </div>
-                            <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job3_desc">
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Gestioné proyectos TI de alta complejidad, incluyendo integración ERP con <strong class="text-white">AX 2012 R3</strong>.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Lideré el desarrollo de plataforma e-commerce e integraciones API críticas.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Implementé minería de datos para enriquecimiento de catálogo de productos.</span></li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-5">
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">ERP</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">AX 2012</span>
-                                <span class="tag-pill px-2.5 py-1 bg-steel-800/60 border border-steel-600/50 text-steel-200 rounded-lg">Data Mining</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Job 4 – Parameta -->
-                    <article class="relative mb-10 reveal" data-delay="250">
-                        <div class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center">
-                            <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
-                        </div>
-                        <div class="border-gradient rounded-2xl p-6 card-hover">
-                            <div class="mb-4">
-                                <h3 class="font-display text-xl font-700 text-white" data-i18n="job4_title">Solution Specialist</h3>
-                                <div class="text-blue-400 font-semibold text-sm mt-1">Parameta SAS</div>
-                                <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job4_date">2022 – 2023</div>
-                            </div>
-                            <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job4_desc">
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Definí y configuré requerimientos para sistemas de compras empresariales.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Validé, transformé y preparé Big Data para analítica de negocio.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Diseñé flujos de pruebas unitarias y QA para garantizar calidad de entrega.</span></li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <!-- Job 5 – Comfenalco -->
-                    <article class="relative reveal" data-delay="300">
-                        <div class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-steel-700 border-2 border-steel-500 flex items-center justify-center">
-                            <div class="w-2 h-2 bg-steel-300 rounded-full"></div>
-                        </div>
-                        <div class="border-gradient rounded-2xl p-6 card-hover">
-                            <div class="mb-4">
-                                <h3 class="font-display text-xl font-700 text-white" data-i18n="job5_title">Information Management Analyst</h3>
-                                <div class="text-blue-400 font-semibold text-sm mt-1">Comfenalco Valle EPS</div>
-                                <div class="text-steel-400 text-xs font-mono mt-1" data-i18n="job5_date">2021 – 2022</div>
-                            </div>
-                            <ul class="space-y-2.5 text-steel-200 text-sm" data-i18n="job5_desc">
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Diseñé dashboards BI para entes de control y auditorías externas.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Automaticé bases de datos corporativas con Microsoft 365 y SQL.</span></li>
-                                <li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Lideré proyectos de innovación y sistemas de evaluación de riesgos.</span></li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ─── PROJECTS ─── -->
-        <section id="projects" class="py-24">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="reveal">
-                    <div class="section-label mb-3">03 — <span data-i18n="projects_title">Proyectos</span></div>
-                    <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="projects_title">Proyectos Destacados</h2>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- Project 1 -->
-                    <article class="border-gradient rounded-2xl p-6 card-hover reveal">
-                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
-                        </div>
-                        <h3 class="font-display font-700 text-white text-lg mb-2" data-i18n="proj1_title">E-commerce & API Integration</h3>
-                        <p class="text-steel-300 text-sm leading-relaxed mb-4" data-i18n="proj1_desc">Tienda Magento con sincronización de inventario en tiempo real vía APIs REST para Daniels Home Center.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag-pill px-2 py-0.5 bg-steel-800/60 border border-steel-600/40 text-steel-300 rounded">Magento</span>
-                            <span class="tag-pill px-2 py-0.5 bg-steel-800/60 border border-steel-600/40 text-steel-300 rounded">REST API</span>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="border-gradient rounded-2xl p-6 card-hover reveal" data-delay="100">
-                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-                        </div>
-                        <h3 class="font-display font-700 text-white text-lg mb-2" data-i18n="proj2_title">SaaS BI Environment</h3>
-                        <p class="text-steel-300 text-sm leading-relaxed mb-4" data-i18n="proj2_desc">Entorno de Business Intelligence para OrderBahn con modelos predictivos y dashboards KPI para proveedores.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag-pill px-2 py-0.5 bg-steel-800/60 border border-steel-600/40 text-steel-300 rounded">Power BI</span>
-                            <span class="tag-pill px-2 py-0.5 bg-steel-800/60 border border-steel-600/40 text-steel-300 rounded">ML Models</span>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="border-gradient rounded-2xl p-6 card-hover reveal" data-delay="200">
-                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center mb-4">
-                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7M10 11l2 2 4-4M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
-                        </div>
-                        <h3 class="font-display font-700 text-white text-lg mb-2" data-i18n="proj3_title">ERP Integration AX 2012</h3>
-                        <p class="text-steel-300 text-sm leading-relaxed mb-4" data-i18n="proj3_desc">Integración ERP completa e interoperabilidad vía APIs para HK Global Training.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="tag-pill px-2 py-0.5 bg-steel-800/60 border border-steel-600/40 text-steel-300 rounded">AX 2012</span>
-                            <span class="tag-pill px-2 py-0.5 bg-steel-800/60 border border-steel-600/40 text-steel-300 rounded">ERP</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ─── SKILLS ─── -->
-        <section id="skills" class="py-24 relative">
-            <div class="absolute inset-0 bg-navy-900/40"></div>
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <div class="reveal">
-                    <div class="section-label mb-3">04 — <span data-i18n="skills_title">Habilidades</span></div>
-                    <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="skills_title">Habilidades & Tecnologías</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-10">
-                    <!-- Analytics & BI -->
-                    <div class="reveal">
-                        <h3 class="font-display text-sm font-600 text-blue-400 uppercase tracking-widest mb-5">Analytics & BI</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Microsoft Fabric / Power BI</span><span class="font-mono text-xs text-blue-400">95%</span></div>
-                                <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="skill-bar-fill h-full rounded-full" style="width:95%"></div></div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">SQL / Data Modeling</span><span class="font-mono text-xs text-blue-400">90%</span></div>
-                                <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="skill-bar-fill h-full rounded-full" style="width:90%"></div></div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Azure / Dynamics 365</span><span class="font-mono text-xs text-blue-400">85%</span></div>
-                                <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="skill-bar-fill h-full rounded-full" style="width:85%"></div></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product & AI -->
-                    <div class="reveal" data-delay="100">
-                        <h3 class="font-display text-sm font-600 text-blue-400 uppercase tracking-widest mb-5">Product & AI</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Product Ownership / Scrum</span><span class="font-mono text-xs text-blue-400">95%</span></div>
-                                <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="skill-bar-fill h-full rounded-full" style="width:95%"></div></div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">AI Way of Work</span><span class="font-mono text-xs text-blue-400">88%</span></div>
-                                <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="skill-bar-fill h-full rounded-full" style="width:88%"></div></div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1.5"><span class="text-steel-200 text-sm">Stakeholder Management</span><span class="font-mono text-xs text-blue-400">92%</span></div>
-                                <div class="h-1.5 bg-steel-800 rounded-full overflow-hidden"><div class="skill-bar-fill h-full rounded-full" style="width:92%"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tech tags -->
-                <div class="mt-12 reveal" data-delay="200">
-                    <h3 class="font-display text-sm font-600 text-blue-400 uppercase tracking-widest mb-5">Stack Tecnológico</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Microsoft Fabric</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Power BI</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Dynamics 365</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Azure DevOps</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Apriso</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">SQL</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Python</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">REST APIs</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Magento</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Jira</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">AX 2012</span>
-                        <span class="tag-pill px-3 py-1.5 border-gradient rounded-lg text-steel-200">Scrum</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ─── EDUCATION ─── -->
-        <section id="education" class="py-24">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="reveal">
-                    <div class="section-label mb-3">05 — <span data-i18n="edu_title">Educación</span></div>
-                    <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-12" data-i18n="edu_title">Educación</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-10">
-                    <!-- Education list -->
-                    <div class="space-y-5 reveal">
-                        <div class="border-gradient rounded-xl p-5 card-hover">
-                            <div class="text-blue-400 font-mono text-xs mb-1">2023 – 2025</div>
-                            <div class="font-display font-700 text-white">MEng, Data Science & Analytics</div>
-                            <div class="text-steel-300 text-sm mt-1">UNIR</div>
-                        </div>
-                        <div class="border-gradient rounded-xl p-5 card-hover">
-                            <div class="text-blue-400 font-mono text-xs mb-1">2024 – 2025</div>
-                            <div class="font-display font-700 text-white">Digital Project Management</div>
-                            <div class="text-steel-300 text-sm mt-1">MIU City University Miami</div>
-                        </div>
-                        <div class="border-gradient rounded-xl p-5 card-hover">
-                            <div class="text-blue-400 font-mono text-xs mb-1">2012 – 2018</div>
-                            <div class="font-display font-700 text-white">B.Eng, Industrial Engineering</div>
-                            <div class="text-steel-300 text-sm mt-1">Universidad de Ibagué</div>
-                        </div>
-                    </div>
-
-                    <!-- Certifications -->
-                    <div class="reveal" data-delay="100">
-                        <h3 class="font-display font-700 text-white text-xl mb-5" data-i18n="cert_title">Certificaciones</h3>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-3 border-gradient rounded-xl p-4 card-hover">
-                                <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                </div>
-                                <span class="text-steel-200 text-sm">Microsoft Certified: Azure AI Fundamentals</span>
-                            </div>
-                            <div class="flex items-center gap-3 border-gradient rounded-xl p-4 card-hover">
-                                <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                </div>
-                                <span class="text-steel-200 text-sm">Internal Auditor in Integrated HSEQ Systems</span>
-                            </div>
-                            <div class="flex items-center gap-3 border-gradient rounded-xl p-4 card-hover">
-                                <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                </div>
-                                <span class="text-steel-200 text-sm">Data Analysis Professional Skills – Coursera</span>
-                            </div>
-                            <div class="flex items-center gap-3 border-gradient rounded-xl p-4 card-hover">
-                                <div class="w-8 h-8 rounded-lg bg-blue-600/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                </div>
-                                <span class="text-steel-200 text-sm">Leadership Continuing Education Certificate</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ─── CONTACT ─── -->
-        <section id="contact" class="py-24 relative">
-            <div class="absolute inset-0 bg-navy-900/40"></div>
-            <div class="orb w-64 h-64 bg-blue-800/20 top-0 right-0"></div>
-            <div class="max-w-2xl mx-auto px-6 relative z-10">
-                <div class="text-center reveal">
-                    <div class="section-label mb-3">06 — <span data-i18n="contact_title">Contacto</span></div>
-                    <h2 class="font-display text-3xl lg:text-4xl font-700 text-white mb-4" data-i18n="contact_title">Contacto</h2>
-                    <p class="text-steel-300 mb-10" data-i18n="contact_intro">¿Interesado en colaborar o tienes alguna pregunta? Envíame un mensaje.</p>
-                </div>
-
-                <form class="space-y-5 reveal" action="mailto:andresm3000@gmail.com" method="post" enctype="text/plain">
-                    <div>
-                        <label class="block text-steel-300 text-sm font-medium mb-2" data-i18n="form_name">Nombre</label>
-                        <input type="text" name="name" required placeholder="Tu nombre"
-                            class="w-full rounded-xl px-4 py-3 text-sm focus:ring-0">
-                    </div>
-                    <div>
-                        <label class="block text-steel-300 text-sm font-medium mb-2" data-i18n="form_email">Email</label>
-                        <input type="email" name="email" required placeholder="tu@email.com"
-                            class="w-full rounded-xl px-4 py-3 text-sm focus:ring-0">
-                    </div>
-                    <div>
-                        <label class="block text-steel-300 text-sm font-medium mb-2" data-i18n="form_msg">Mensaje</label>
-                        <textarea name="message" rows="5" required placeholder="¿Cómo puedo ayudarte?"
-                            class="w-full rounded-xl px-4 py-3 text-sm focus:ring-0 resize-none"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5"
-                        data-i18n="btn_send">Enviar Mensaje</button>
-                </form>
-
-                <!-- Social links -->
-                <div class="flex justify-center gap-6 mt-10 reveal">
-                    <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" rel="noopener noreferrer"
-                        class="w-12 h-12 border-gradient rounded-xl flex items-center justify-center text-steel-300 hover:text-blue-400 transition-colors card-hover">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:andresm3000@gmail.com"
-                        class="w-12 h-12 border-gradient rounded-xl flex items-center justify-center text-steel-300 hover:text-blue-400 transition-colors card-hover">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                    </a>
-                </div>
-                <p class="text-center text-steel-400 text-sm mt-6">📍 Cali, Valle del Cauca, Colombia</p>
-            </div>
-        </section>
-    </main>
-
-
-    <!-- ─── FOOTER ─── -->
-    <footer class="border-t border-steel-800/50 py-8">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-            <span class="font-display font-700 text-white">Andrés Triana</span>
-            <span class="text-steel-500 text-sm">© 2025 Andrés Mauricio Triana Sánchez</span>
-            <a href="https://www.linkedin.com/in/andrestriana000" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm transition-colors">LinkedIn →</a>
-        </div>
-    </footer>
-
-
-    <script>
-        // ─── TRANSLATIONS ───
-        const translations = {
-            es: {
-                nav_about: "Sobre mí", nav_exp: "Experiencia", nav_projects: "Proyectos",
-                nav_skills: "Habilidades", nav_edu: "Educación", nav_contact: "Contacto",
-                hero_greeting: "Hola, soy",
-                hero_role: "Senior Business Analyst & Product Owner",
-                hero_desc: "Convierto datos complejos en decisiones estratégicas. Especialista en <strong class='text-blue-300'>SaaS</strong>, <strong class='text-blue-300'>Microsoft Fabric</strong> y <strong class='text-blue-300'>AI-Driven Analytics</strong> — alineando tecnología con impacto real de negocio.",
-                btn_contact: "Contáctame",
-                stat_years: "Años de experiencia", stat_countries: "Países", stat_projects: "Proyectos entregados",
-                badge_available: "Disponible", badge_present: "Actual",
-                about_title: "Sobre mí",
-                about_p1: "Soy un <strong class='text-white'>Senior Business Analyst</strong> y <strong class='text-white'>Product Owner</strong> con un enfoque implacable en resultados. No gestiono requerimientos — defino el puente entre la visión de negocio y la ejecución técnica. Mi metodología <strong class='text-blue-300'>AI Way of Work</strong> integra inteligencia artificial como palanca estratégica, no como tendencia.",
-                about_p2: "Lidero equipos bajo <strong class='text-white'>Scrum</strong> convirtiendo ambigüedad en productos digitales con impacto medible. Combino rigor técnico en datos con inteligencia de negocio para garantizar que cada feature entregada mueva el marcador.",
-                exp_title: "Experiencia Profesional",
-                job0_title: "Senior Business Analyst",
-                job0_date: "Ene 2026 – Presente · 3 meses",
-                job0_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Dirijo el producto de <strong class='text-white'>Business Intelligence</strong> para Hexcel Composites en el ecosistema Microsoft — abarcando Dynamics 365, AX, Apriso, Azure DevOps y <strong class='text-white'>Microsoft Fabric</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Defino la <strong class='text-white'>estrategia BI empresarial</strong>, alineando capacidades de datos y reporting con los objetivos de negocio a escala global.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Traduzco datos operativos y financieros complejos en <strong class='text-white'>insights accionables</strong> para líderes de negocio, TI y equipos de ingeniería de datos.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Garantizo soluciones BI escalables y gobernadas en dominios de manufactura y corporativos.</span></li>`,
-                job1_title: "Senior Business Analyst & AI Analyst",
-                job1_date: "2023 – 2025",
-                job1_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Lideré el <strong class='text-white'>Diseño y Desarrollo de Producto</strong> para la plataforma SaaS OrderBahn bajo Scrum — de requerimiento a release.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Desplegué <strong class='text-white'>AI Driven Solutions</strong> con modelos predictivos que optimizaron flujos críticos en el sector mobiliario.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Estructuré el Departamento de Datos desde cero, estableciendo gobernanza y estrategia Analytics para la toma de decisiones ejecutiva.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Gestioné el backlog priorizando features por valor de negocio y señales de datos.</span></li>`,
-                job2_title: "Independent Consulting",
-                job2_date: "2023 – Presente",
-                job2_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Diseñé y desplegué e-commerce Magento con sincronización de inventario en tiempo real vía APIs REST.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Implementé soluciones API personalizadas que eliminaron cuellos de botella operativos críticos.</span></li>`,
-                job3_title: "Project Engineer",
-                job3_date: "2022 – 2024",
-                job3_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Gestioné proyectos TI de alta complejidad, incluyendo integración ERP con <strong class='text-white'>AX 2012 R3</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Lideré el desarrollo de plataforma e-commerce e integraciones API críticas.</span></li>`,
-                job4_title: "Solution Specialist",
-                job4_date: "2022 – 2023",
-                job4_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Definí y configuré requerimientos para sistemas de compras empresariales.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Validé y preparé Big Data para analítica de negocio.</span></li>`,
-                job5_title: "Information Management Analyst",
-                job5_date: "2021 – 2022",
-                job5_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Diseñé dashboards BI para entes de control y auditorías externas.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Automaticé bases de datos corporativas con Microsoft 365 y SQL.</span></li>`,
-                projects_title: "Proyectos Destacados",
-                proj1_title: "E-commerce & API Integration",
-                proj1_desc: "Tienda Magento con sincronización de inventario en tiempo real vía APIs REST para Daniels Home Center.",
-                proj2_title: "SaaS BI Environment",
-                proj2_desc: "Entorno de Business Intelligence para OrderBahn con modelos predictivos y dashboards KPI para proveedores.",
-                proj3_title: "ERP Integration AX 2012",
-                proj3_desc: "Integración ERP completa e interoperabilidad vía APIs para HK Global Training.",
-                skills_title: "Habilidades & Tecnologías",
-                edu_title: "Educación",
-                cert_title: "Certificaciones",
-                contact_title: "Contacto",
-                contact_intro: "¿Interesado en colaborar o tienes alguna pregunta? Envíame un mensaje.",
-                form_name: "Nombre", form_email: "Email", form_msg: "Mensaje", btn_send: "Enviar Mensaje"
-            },
-            en: {
-                nav_about: "About Me", nav_exp: "Experience", nav_projects: "Projects",
-                nav_skills: "Skills", nav_edu: "Education", nav_contact: "Contact",
-                hero_greeting: "Hi, I'm",
-                hero_role: "Senior Business Analyst & Product Owner",
-                hero_desc: "I turn complex data into strategic decisions. Expert in <strong class='text-blue-300'>SaaS</strong>, <strong class='text-blue-300'>Microsoft Fabric</strong>, and <strong class='text-blue-300'>AI-Driven Analytics</strong> — aligning technology with real business impact.",
-                btn_contact: "Contact Me",
-                stat_years: "Years experience", stat_countries: "Countries", stat_projects: "Delivered projects",
-                badge_available: "Available", badge_present: "Current",
-                about_title: "About Me",
-                about_p1: "I am a <strong class='text-white'>Senior Business Analyst</strong> and <strong class='text-white'>Product Owner</strong> with an unrelenting focus on outcomes. I don't manage requirements — I define the bridge between business vision and technical execution. My <strong class='text-blue-300'>AI Way of Work</strong> methodology integrates artificial intelligence as a strategic lever, not a buzzword.",
-                about_p2: "I lead teams under <strong class='text-white'>Scrum</strong>, converting ambiguity into digital products with measurable impact. I combine technical data rigor with business intelligence to ensure every delivered feature moves the needle.",
-                exp_title: "Professional Experience",
-                job0_title: "Senior Business Analyst",
-                job0_date: "Jan 2026 – Present · 3 months",
-                job0_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Lead the <strong class='text-white'>Business Intelligence product</strong> for Hexcel Composites across the Microsoft ecosystem — spanning Dynamics 365, AX, Apriso, Azure DevOps, and <strong class='text-white'>Microsoft Fabric</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Define the <strong class='text-white'>enterprise BI strategy</strong>, aligning data and reporting capabilities with business objectives at global scale.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Translate complex operational and financial data into <strong class='text-white'>actionable insights</strong> for business leaders, IT, and data engineering teams.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Ensure scalable, governed BI solutions across manufacturing and corporate domains.</span></li>`,
-                job1_title: "Senior Business Analyst & AI Analyst",
-                job1_date: "2023 – 2025",
-                job1_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Led <strong class='text-white'>Product Design and Development</strong> for the OrderBahn SaaS platform under Scrum — from requirement to release.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Deployed <strong class='text-white'>AI Driven Solutions</strong> with predictive models that optimized critical workflows in the furniture sector.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Built the Data Department from scratch, establishing governance and Analytics strategy for executive decision-making.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Managed the backlog prioritizing features by business value and data signals.</span></li>`,
-                job2_title: "Independent Consulting",
-                job2_date: "2023 – Present",
-                job2_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Designed and deployed a Magento e-commerce store with real-time inventory sync via REST APIs.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Implemented custom API solutions that eliminated critical operational bottlenecks.</span></li>`,
-                job3_title: "Project Engineer",
-                job3_date: "2022 – 2024",
-                job3_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Managed high-complexity IT projects including ERP integration with <strong class='text-white'>AX 2012 R3</strong>.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Led e-commerce platform development and critical API integrations.</span></li>`,
-                job4_title: "Solution Specialist",
-                job4_date: "2022 – 2023",
-                job4_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Defined and configured requirements for enterprise procurement systems.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Validated and prepared Big Data for business analytics.</span></li>`,
-                job5_title: "Information Management Analyst",
-                job5_date: "2021 – 2022",
-                job5_desc: `<li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Designed BI dashboards for control entities and external audits.</span></li><li class="flex gap-2"><span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span><span>Automated corporate databases using Microsoft 365 and SQL.</span></li>`,
-                projects_title: "Featured Projects",
-                proj1_title: "E-commerce & API Integration",
-                proj1_desc: "Magento store with real-time inventory sync via custom REST APIs for Daniels Home Center.",
-                proj2_title: "SaaS BI Environment",
-                proj2_desc: "Business Intelligence environment for OrderBahn with predictive models and supplier KPI dashboards.",
-                proj3_title: "ERP Integration AX 2012",
-                proj3_desc: "Full ERP integration and API interoperability for HK Global Training.",
-                skills_title: "Skills & Technologies",
-                edu_title: "Education",
-                cert_title: "Certifications",
-                contact_title: "Contact",
-                contact_intro: "Interested in collaborating or have a question? Send me a message.",
-                form_name: "Name", form_email: "Email", form_msg: "Message", btn_send: "Send Message"
-            }
-        };
-
-        let currentLang = 'es';
-
-        function updateLanguage(lang) {
-            currentLang = lang;
-            const t = translations[lang];
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (t[key] !== undefined) {
-                    el.innerHTML = t[key];
-                }
-            });
-            // Update lang buttons
-            ['lang-es', 'lang-es-mobile'].forEach(id => {
-                const btn = document.getElementById(id);
-                if (btn) btn.className = lang === 'es' ? 'lang-active px-3 py-1 rounded-md text-xs font-semibold transition-all' : 'px-3 py-1 rounded-md text-xs font-semibold text-steel-300 transition-all';
-            });
-            ['lang-en', 'lang-en-mobile'].forEach(id => {
-                const btn = document.getElementById(id);
-                if (btn) btn.className = lang === 'en' ? 'lang-active px-3 py-1 rounded-md text-xs font-semibold transition-all' : 'px-3 py-1 rounded-md text-xs font-semibold text-steel-300 transition-all';
-            });
-        }
-
-        ['lang-es', 'lang-es-mobile'].forEach(id => {
-            document.getElementById(id)?.addEventListener('click', () => updateLanguage('es'));
-        });
-        ['lang-en', 'lang-en-mobile'].forEach(id => {
-            document.getElementById(id)?.addEventListener('click', () => updateLanguage('en'));
-        });
-
-        // ─── MOBILE MENU ───
-        const mobileBtn = document.getElementById('mobile-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        document.querySelectorAll('.mobile-nav').forEach(link => {
-            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
-        });
-
-        // ─── SCROLL REVEAL ───
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const delay = entry.target.getAttribute('data-delay') || 0;
-                    setTimeout(() => entry.target.classList.add('visible'), parseInt(delay));
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // ─── NAVBAR SCROLL ───
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '0';
-            } else {
-                navbar.style.padding = '';
-            }
-        });
-    </script>
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const d=parseInt(e.target.getAttribute('data-delay')||0);setTimeout(()=>e.target.classList.add('visible'),d);obs.unobserve(e.target)}})},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
